@@ -1,0 +1,112 @@
+S:\Sistema La Bacana\TecnasaApp\Domain\bin\Debug\Domain.dll
+S:\Sistema La Bacana\TecnasaApp\Domain\bin\Debug\Domain.pdb
+S:\Sistema La Bacana\TecnasaApp\Domain\bin\Debug\Common.dll
+S:\Sistema La Bacana\TecnasaApp\Domain\bin\Debug\DataAccess.dll
+S:\Sistema La Bacana\TecnasaApp\Domain\bin\Debug\FontAwesome.Sharp.dll
+S:\Sistema La Bacana\TecnasaApp\Domain\bin\Debug\Common.pdb
+S:\Sistema La Bacana\TecnasaApp\Domain\bin\Debug\DataAccess.pdb
+S:\Sistema La Bacana\TecnasaApp\Domain\obj\Debug\Domain.csproj.AssemblyReference.cache
+S:\Sistema La Bacana\TecnasaApp\Domain\obj\Debug\Domain.csproj.CoreCompileInputs.cache
+S:\Sistema La Bacana\TecnasaApp\Domain\obj\Debug\Domain.csproj.CopyComplete
+S:\Sistema La Bacana\TecnasaApp\Domain\obj\Debug\Domain.dll
+S:\Sistema La Bacana\TecnasaApp\Domain\obj\Debug\Domain.pdb
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\Domain.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\Domain.pdb
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\Common.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\DataAccess.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\FontAwesome.Sharp.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\Microsoft.ReportViewer.Common.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\Microsoft.ReportViewer.Design.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\Microsoft.SqlServer.Types.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\EnvDTE.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\stdole.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\Common.pdb
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\DataAccess.pdb
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+S:\Tecnasa\TecnasaApp\Domain\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+S:\Tecnasa\TecnasaApp\Domain\obj\Debug\Domain.csproj.AssemblyReference.cache
+S:\Tecnasa\TecnasaApp\Domain\obj\Debug\Domain.csproj.CoreCompileInputs.cache
+S:\Tecnasa\TecnasaApp\Domain\obj\Debug\Domain.csproj.CopyComplete
+S:\Tecnasa\TecnasaApp\Domain\obj\Debug\Domain.dll
+S:\Tecnasa\TecnasaApp\Domain\obj\Debug\Domain.pdb
+S:\Jorge\CalculoViaticos\CalculoViaticos\Domain\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+S:\Jorge\CalculoViaticos\CalculoViaticos\Domain\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+S:\Jorge\CalculoViaticos\CalculoViaticos\Domain\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+S:\Jorge\CalculoViaticos\CalculoViaticos\Domain\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+S:\Jorge\CalculoViaticos\CalculoViaticos\Domain\bin\Debug\Domain.dll
+S:\Jorge\CalculoViaticos\CalculoViaticos\Domain\bin\Debug\Domain.pdb
+S:\Jorge\CalculoViaticos\CalculoViaticos\Domain\bin\Debug\Common.dll
+S:\Jorge\CalculoViaticos\CalculoViaticos\Domain\bin\Debug\DataAccess.dll
+S:\Jorge\CalculoViaticos\CalculoViaticos\Domain\bin\Debug\EnvDTE.dll
+S:\Jorge\CalculoViaticos\CalculoViaticos\Domain\bin\Debug\stdole.dll
+S:\Jorge\CalculoViaticos\CalculoViaticos\Domain\bin\Debug\Common.pdb
+S:\Jorge\CalculoViaticos\CalculoViaticos\Domain\bin\Debug\DataAccess.pdb
+S:\Jorge\CalculoViaticos\CalculoViaticos\Domain\obj\Debug\Domain.csproj.AssemblyReference.cache
+S:\Jorge\CalculoViaticos\CalculoViaticos\Domain\obj\Debug\Domain.csproj.CoreCompileInputs.cache
+S:\Jorge\CalculoViaticos\CalculoViaticos\Domain\obj\Debug\Domain.csproj.CopyComplete
+S:\Jorge\CalculoViaticos\CalculoViaticos\Domain\obj\Debug\Domain.dll
+S:\Jorge\CalculoViaticos\CalculoViaticos\Domain\obj\Debug\Domain.pdb
+S:\Jorge\CalculoViaticos\CalculoViaticos\Domain\bin\Debug\Guna.UI2.dll
+D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\Domain\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\Domain\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\Domain\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\Domain\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\Domain\bin\Debug\Domain.dll
+D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\Domain\bin\Debug\Domain.pdb
+D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\Domain\bin\Debug\Common.dll
+D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\Domain\bin\Debug\DataAccess.dll
+D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\Domain\bin\Debug\Guna.UI2.dll
+D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\Domain\bin\Debug\EnvDTE.dll
+D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\Domain\bin\Debug\stdole.dll
+D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\Domain\bin\Debug\Common.pdb
+D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\Domain\bin\Debug\DataAccess.pdb
+D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\Domain\obj\Debug\Domain.csproj.AssemblyReference.cache
+D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\Domain\obj\Debug\Domain.csproj.CoreCompileInputs.cache
+D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\Domain\obj\Debug\Domain.csproj.CopyComplete
+D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\Domain\obj\Debug\Domain.dll
+D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\Domain\obj\Debug\Domain.pdb
