@@ -384,7 +384,7 @@ namespace TecnasaApp
         {
             try
             {
-                Process.Start("https://tienda-de-camisashn.netlify.app/");
+                Process.Start("https://supporttecnasa.netlify.app");
             }
             catch (Exception ex)
             {
