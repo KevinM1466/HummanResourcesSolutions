@@ -1,4 +1,6 @@
-﻿using Clases;
+﻿using CalculoViaticos.Formularios;
+
+using Clases;
 using Common.cache;
 using Domain;
 using Domain.CRUDS;
@@ -11,6 +13,7 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -22,6 +25,7 @@ namespace TecnasaApp.Formularios.General.Vacaciones
         SolicitudD solicitud = new SolicitudD();
         Validaciones validaciones = new Validaciones();
         userModel envioSolicitud = new userModel();
+        WaitFormFunc wait = new WaitFormFunc(); 
         public frmSolicitud()
         {
             InitializeComponent();
@@ -35,6 +39,31 @@ namespace TecnasaApp.Formularios.General.Vacaciones
             dtpInicio.Value = DateTime.Today;
             dtpFinal.Value = DateTime.Today;
             dtpReingreso.Value = DateTime.Today;
+
+            if ( CalculoViaticos.Properties.Settings.Default.Tema != "" ) {
+                CambiarTema( CalculoViaticos.Properties.Settings.Default.Tema );
+            } else {
+                CambiarTema( "Tecnasa" );
+            }
+        }
+
+        public void CambiarTema( string tema ) {
+            Temas.ElegirTema( tema );
+            this.BackColor = Temas.pnlDesktop;
+            //Labels
+            label1.ForeColor = Temas.fuenteTitulos;
+            label8.ForeColor = Temas.fuenteTitulos;
+            label9.ForeColor = Temas.fuenteTitulos;
+            label10.ForeColor = Temas.fuenteTitulos;
+            label11.ForeColor = Temas.fuenteTitulos;
+            label12.ForeColor = Temas.fuenteTitulos;
+            label2.ForeColor = Temas.fuenteTitulos;
+            label7.ForeColor = Temas.fuenteTitulos;
+            label6.ForeColor = Temas.fuenteTitulos;
+
+            //buttons
+            btnEnviarSolicitud.BackColor = Temas.buttonsColor;
+            btnErrorMessage.ForeColor = Temas.fuenteTitulos;
         }
 
         private void btnEnviarSolicitud_Click(object sender, EventArgs e)
@@ -68,15 +97,15 @@ namespace TecnasaApp.Formularios.General.Vacaciones
                             if (validaciones.camposVacios(txtMotivo.Text, btnErrorMessage))
                             {
                                 solicitud.Insertar(cmbTipoVacaciones.Text, int.Parse(txtEmpleadoID.Text), dtpEfectiva.Value, dtpInicio.Value, dtpFinal.Value, dtpReingreso.Value, chkRemunerado.Checked, txtMotivo.Text);
-                                MessageDialog.Show("Datos guardados con exito", "Soporte de Sistema", MessageDialogButtons.OK, MessageDialogIcon.Information);
                                 envioSolicitud.MessageRecursosHumanos(UserLoginCache.correoAdmin.ToString());
+                                MessageDialog.Show("Datos guardados con exito", "Soporte de Sistema", MessageDialogButtons.OK, MessageDialogIcon.Information);
                             }
                         }
                         else
                         {
                             solicitud.Insertar(cmbTipoVacaciones.Text, int.Parse(txtEmpleadoID.Text), dtpEfectiva.Value, dtpInicio.Value, dtpFinal.Value, dtpReingreso.Value, chkRemunerado.Checked, txtMotivo.Text);
-                            MessageDialog.Show("Datos guardados con exito", "Soporte de Sistema", MessageDialogButtons.OK, MessageDialogIcon.Information);
                             envioSolicitud.MessageRecursosHumanos(UserLoginCache.correoAdmin.ToString());
+                            MessageDialog.Show("Datos guardados con exito", "Soporte de Sistema", MessageDialogButtons.OK, MessageDialogIcon.Information);
                         }
                     }
                 }
@@ -98,7 +127,6 @@ namespace TecnasaApp.Formularios.General.Vacaciones
                 dtpReingreso.Enabled = false;
 
                 txtMotivo.Enabled = false;
-                chkRemunerado.Enabled = false;
             }
             if (cmbTipoVacaciones.SelectedIndex == 1)
             {
@@ -107,7 +135,6 @@ namespace TecnasaApp.Formularios.General.Vacaciones
                 dtpReingreso.Enabled = true;
 
                 txtMotivo.Enabled = false;
-                chkRemunerado.Enabled = false;
             }
             else if (cmbTipoVacaciones.SelectedIndex == 2)
             {
@@ -115,7 +142,6 @@ namespace TecnasaApp.Formularios.General.Vacaciones
                 dtpFinal.Enabled = true;
                 dtpReingreso.Enabled = true;
                 txtMotivo.Enabled = true;
-                chkRemunerado.Enabled = true;
             }
 
 

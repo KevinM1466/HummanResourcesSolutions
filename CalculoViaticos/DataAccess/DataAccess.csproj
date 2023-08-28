@@ -74,6 +74,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ComboBoxDA\ComboBox_DA.cs" />
+    <Compile Include="CRUDS\AuditTrailsDA.cs" />
     <Compile Include="CRUDS\ClientesDA.cs" />
     <Compile Include="CRUDS\DepartamentosDA.cs" />
     <Compile Include="CRUDS\EmpleadosDA.cs" />
@@ -82,12 +83,16 @@
     <Compile Include="CRUDS\PuestosDA.cs" />
     <Compile Include="CRUDS\ReporteSolicitudDA.cs" />
     <Compile Include="CRUDS\SolicitudDA.cs" />
+    <Compile Include="CRUDS\UsuariosDA.cs" />
     <Compile Include="MailServices\MasterMailServer.cs" />
     <Compile Include="MailServices\SystemSupportMail.cs" />
+    <Compile Include="Reinicio\ReinicioDA.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="SqlServer\ConnectionToSql.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlServer\filtrosDao.cs" />
     <Compile Include="SqlServer\searchDao.cs" />
+    <Compile Include="SqlServer\SolicitudDao.cs" />
     <Compile Include="SqlServer\userDao.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -59,5 +59,93 @@ namespace CalculoViaticos.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _350 {
+            get {
+                object obj = ResourceManager.GetObject("_350", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a &lt;!DOCTYPE html&gt;
+        ///&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+        ///
+        ///&lt;head&gt;
+        ///    &lt;title&gt;Title of the document&lt;/title&gt;
+        ///    &lt;style&gt;
+        ///        body {
+        ///            position: relative;
+        ///            width: 21cm;
+        ///            height: 29.7cm;
+        ///            margin: 0 auto;
+        ///            color: #001028;
+        ///            background: #FFFFFF;
+        ///            font-size: 14px;
+        ///            font-family: &apos;Poppins&apos;, sans-serif;
+        ///        }
+        ///
+        ///        table.border {
+        ///            border-collapse: collapse;
+        ///        }
+        ///
+        ///            table.bo [resto de la cadena truncado]&quot;;.
+        /// </summary>
+        internal static string Plantilla {
+            get {
+                return ResourceManager.GetString("Plantilla", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a body {
+        ///    position: relative;
+        ///    width: 21cm;
+        ///    height: 29.7cm;
+        ///    margin: 0 auto;
+        ///    color: #001028;
+        ///    background: #FFFFFF;
+        ///    font-size: 14px;
+        ///    font-family: &apos;Poppins&apos;, sans-serif;
+        ///}
+        ///
+        ///table.border {
+        ///    border-collapse: collapse;
+        ///}
+        ///
+        ///table.border th {
+        ///    padding: 5px;
+        ///    border: 1px solid black;
+        ///}
+        ///
+        ///table.border td {
+        ///    padding: 5px;
+        ///    border: 1px solid black;
+        ///}
+        ///
+        ///.encabezado {
+        ///    background-color: #343374;
+        ///    font-size: 14px;
+        ///    color: white;
+        ///    font-weight:  [resto de la cadena truncado]&quot;;.
+        /// </summary>
+        internal static string styles {
+            get {
+                return ResourceManager.GetString("styles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TecnasaLogo {
+            get {
+                object obj = ResourceManager.GetObject("TecnasaLogo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSolicitud));
             this.panel1 = new System.Windows.Forms.Panel();
             this.chkRemunerado = new Guna.UI2.WinForms.Guna2CustomCheckBox();
             this.btnErrorMessage = new FontAwesome.Sharp.IconButton();
@@ -50,13 +49,11 @@
             this.label9 = new System.Windows.Forms.Label();
             this.dtpEfectiva = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
-            this.btnHome = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtEmpleado = new Guna.UI2.WinForms.Guna2TextBox();
             this.cmbTipoVacaciones = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnHome)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -72,9 +69,9 @@
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.txtMotivo);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Location = new System.Drawing.Point(12, 205);
+            this.panel1.Location = new System.Drawing.Point(268, 349);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1038, 438);
+            this.panel1.Size = new System.Drawing.Size(868, 438);
             this.panel1.TabIndex = 255;
             // 
             // chkRemunerado
@@ -85,8 +82,7 @@
             this.chkRemunerado.CheckedState.BorderRadius = 4;
             this.chkRemunerado.CheckedState.BorderThickness = 0;
             this.chkRemunerado.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.chkRemunerado.Enabled = false;
-            this.chkRemunerado.Location = new System.Drawing.Point(878, 58);
+            this.chkRemunerado.Location = new System.Drawing.Point(708, 53);
             this.chkRemunerado.Name = "chkRemunerado";
             this.chkRemunerado.Size = new System.Drawing.Size(25, 25);
             this.chkRemunerado.TabIndex = 264;
@@ -106,7 +102,7 @@
             this.btnErrorMessage.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnErrorMessage.IconSize = 22;
             this.btnErrorMessage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnErrorMessage.Location = new System.Drawing.Point(259, 107);
+            this.btnErrorMessage.Location = new System.Drawing.Point(89, 102);
             this.btnErrorMessage.Name = "btnErrorMessage";
             this.btnErrorMessage.Size = new System.Drawing.Size(278, 30);
             this.btnErrorMessage.TabIndex = 259;
@@ -119,7 +115,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label2.Location = new System.Drawing.Point(658, 30);
+            this.label2.Location = new System.Drawing.Point(488, 25);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(119, 23);
             this.label2.TabIndex = 262;
@@ -136,7 +132,7 @@
             this.dtpReingreso.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtpReingreso.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtpReingreso.IndicateFocus = true;
-            this.dtpReingreso.Location = new System.Drawing.Point(661, 54);
+            this.dtpReingreso.Location = new System.Drawing.Point(491, 49);
             this.dtpReingreso.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpReingreso.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpReingreso.Name = "dtpReingreso";
@@ -150,7 +146,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label11.Location = new System.Drawing.Point(428, 30);
+            this.label11.Location = new System.Drawing.Point(258, 25);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(141, 23);
             this.label11.TabIndex = 260;
@@ -167,7 +163,7 @@
             this.dtpFinal.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.dtpFinal.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtpFinal.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpFinal.Location = new System.Drawing.Point(431, 54);
+            this.dtpFinal.Location = new System.Drawing.Point(261, 49);
             this.dtpFinal.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpFinal.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpFinal.Name = "dtpFinal";
@@ -180,7 +176,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label12.Location = new System.Drawing.Point(198, 30);
+            this.label12.Location = new System.Drawing.Point(28, 25);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(91, 23);
             this.label12.TabIndex = 258;
@@ -195,7 +191,7 @@
             this.dtpInicio.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.dtpInicio.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtpInicio.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpInicio.Location = new System.Drawing.Point(201, 54);
+            this.dtpInicio.Location = new System.Drawing.Point(31, 49);
             this.dtpInicio.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpInicio.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpInicio.Name = "dtpInicio";
@@ -208,7 +204,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label7.Location = new System.Drawing.Point(199, 116);
+            this.label7.Location = new System.Drawing.Point(29, 111);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(55, 23);
             this.label7.TabIndex = 254;
@@ -220,7 +216,7 @@
             this.txtMotivo.Cursor = System.Windows.Forms.Cursors.Default;
             this.txtMotivo.Enabled = false;
             this.txtMotivo.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMotivo.Location = new System.Drawing.Point(202, 140);
+            this.txtMotivo.Location = new System.Drawing.Point(32, 135);
             this.txtMotivo.Name = "txtMotivo";
             this.txtMotivo.Size = new System.Drawing.Size(812, 281);
             this.txtMotivo.TabIndex = 253;
@@ -231,7 +227,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label6.Location = new System.Drawing.Point(904, 59);
+            this.label6.Location = new System.Drawing.Point(734, 54);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(110, 23);
             this.label6.TabIndex = 252;
@@ -255,7 +251,7 @@
             this.btnEnviarSolicitud.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnEnviarSolicitud.IconSize = 32;
             this.btnEnviarSolicitud.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEnviarSolicitud.Location = new System.Drawing.Point(859, 649);
+            this.btnEnviarSolicitud.Location = new System.Drawing.Point(969, 793);
             this.btnEnviarSolicitud.Name = "btnEnviarSolicitud";
             this.btnEnviarSolicitud.Padding = new System.Windows.Forms.Padding(10, 0, 30, 0);
             this.btnEnviarSolicitud.Size = new System.Drawing.Size(167, 51);
@@ -287,7 +283,7 @@
             this.txtEmpleadoID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEmpleadoID.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmpleadoID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmpleadoID.Location = new System.Drawing.Point(221, 87);
+            this.txtEmpleadoID.Location = new System.Drawing.Point(268, 216);
             this.txtEmpleadoID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtEmpleadoID.Name = "txtEmpleadoID";
             this.txtEmpleadoID.PasswordChar = '\0';
@@ -302,7 +298,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label10.Location = new System.Drawing.Point(218, 62);
+            this.label10.Location = new System.Drawing.Point(265, 191);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(78, 23);
             this.label10.TabIndex = 245;
@@ -313,7 +309,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Poppins", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label9.Location = new System.Drawing.Point(216, 13);
+            this.label9.Location = new System.Drawing.Point(263, 142);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(219, 42);
             this.label9.TabIndex = 247;
@@ -327,7 +323,7 @@
             this.dtpEfectiva.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.dtpEfectiva.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtpEfectiva.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpEfectiva.Location = new System.Drawing.Point(889, 85);
+            this.dtpEfectiva.Location = new System.Drawing.Point(936, 214);
             this.dtpEfectiva.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpEfectiva.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpEfectiva.Name = "dtpEfectiva";
@@ -340,30 +336,18 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label8.Location = new System.Drawing.Point(886, 61);
+            this.label8.Location = new System.Drawing.Point(933, 190);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(108, 23);
             this.label8.TabIndex = 249;
             this.label8.Text = "Fecha Efectiva";
-            // 
-            // btnHome
-            // 
-            this.btnHome.AccessibleRole = System.Windows.Forms.AccessibleRole.CheckButton;
-            this.btnHome.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
-            this.btnHome.Location = new System.Drawing.Point(12, 13);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(163, 153);
-            this.btnHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnHome.TabIndex = 250;
-            this.btnHome.TabStop = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(532, 61);
+            this.label1.Location = new System.Drawing.Point(579, 190);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(121, 23);
             this.label1.TabIndex = 254;
@@ -381,7 +365,7 @@
             this.txtEmpleado.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEmpleado.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmpleado.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmpleado.Location = new System.Drawing.Point(221, 87);
+            this.txtEmpleado.Location = new System.Drawing.Point(268, 216);
             this.txtEmpleado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtEmpleado.Name = "txtEmpleado";
             this.txtEmpleado.PasswordChar = '\0';
@@ -406,7 +390,7 @@
             "Seleccione el tipo de solicitud",
             "Vacaciones",
             "Permisos"});
-            this.cmbTipoVacaciones.Location = new System.Drawing.Point(535, 85);
+            this.cmbTipoVacaciones.Location = new System.Drawing.Point(582, 214);
             this.cmbTipoVacaciones.Name = "cmbTipoVacaciones";
             this.cmbTipoVacaciones.Size = new System.Drawing.Size(320, 36);
             this.cmbTipoVacaciones.StartIndex = 0;
@@ -420,7 +404,7 @@
             this.guna2ControlBox1.ControlBoxStyle = Guna.UI2.WinForms.Enums.ControlBoxStyle.Custom;
             this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(1068, 10);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(1336, 10);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(32, 32);
             this.guna2ControlBox1.TabIndex = 260;
@@ -430,13 +414,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.ClientSize = new System.Drawing.Size(1112, 789);
+            this.ClientSize = new System.Drawing.Size(1380, 955);
             this.Controls.Add(this.guna2ControlBox1);
             this.Controls.Add(this.cmbTipoVacaciones);
             this.Controls.Add(this.txtEmpleado);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnHome);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.dtpEfectiva);
             this.Controls.Add(this.label9);
@@ -450,7 +433,6 @@
             this.Load += new System.EventHandler(this.frmSolicitud_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnHome)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -480,7 +462,6 @@
         private Guna.UI2.WinForms.Guna2ComboBox cmbTipoVacaciones;
         private Guna.UI2.WinForms.Guna2TextBox txtEmpleado;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox btnHome;
         private System.Windows.Forms.Label label8;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpEfectiva;
         private System.Windows.Forms.Label label9;

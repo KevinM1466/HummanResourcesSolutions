@@ -13,10 +13,10 @@ namespace Domain.CRUDS
     {
         private PuestosDA puestos = new PuestosDA();
 
-        public DataTable Mostrar()
+        public DataTable Mostrar(bool estado)
         {
             DataTable tabla = new DataTable();
-            tabla = puestos.Mostrar();
+            tabla = puestos.Mostrar(estado);
             return tabla;
         }
 

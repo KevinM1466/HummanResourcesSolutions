@@ -1,0 +1,24 @@
+Usuarios:				Passwords:	Rol:
+	noramartinez1466@gmail.com	Kevin1234	Administrador
+	kevinh1466@gmail.com		Angie1234	JefeDirecto
+	kevindamartinez1518@gmail.com	jorge1234	JefeDirecto
+	kevd_hernandezm@unicah.edu	edis1234	empleado normal
+	aldom@gmail.com			aldo1234	empleado normal
+	carlosz@gmail.com		carlos1234	empleado normal
+
+El sistema consiste en que los empleados puedan realizar solcitudes de sus vacaciones o permisos
+entonces con los usuarios de rol empleado normal ellos realizan las solicitudes una vez hecha la solicitud le caera un correo al usuario admin
+que le indique que un empleado a hecho una solicitud entonce el usuario admin entra al sistema y podra visualizar todas las solicitudes de los empleados
+y podra aceptar o no la solicitud.
+Si acepta la solicitud ya no podra visualizar la solcitud en el sistema por parte del admin; pero, al aceptar la solicitud le caera un correo al jefe directo de dicho 
+empleado y el debera entrar al sistema y debera aceptar la solicitud del empleado al aceptar le caera un correo al empleado indicando que su solicitud fue aprovada.
+Y el empleado podra visualizar sus solicitudes aprovadas.
+Entonces al usar el programa deberan usar los tres tipos de roles que estan ahí, el usuario administrador es por defecto y sera el unico asi que ese no podra eliminarse ni mostrase ni crear otro con rol de administrador.
+El otro rol es el jefe directo este se crea y lo puede crear solamente el usuario administrador y este creara los jefes y los asigmara a un area en especifico:
+por ejemplo, el empleado Jorge Reyes fue contratado como Tecnico o cualquiero otro cargo pero sera asignado como jefe en el área de ATM, y asi podra crear todos los jefes.
+Al crear los jejes los empleados con solamente un cargo seran asignados a dicho jefe de area esto para que pueda aceptar las solicitudes de sus empleados al mando.
+
+Si gustan pueden usar correos que ustedes ya tengan o que puedan tener acceso facil, para poder realizar las pruebas solamente en el usuario administrador pueden editra sus datos como el correo, nombres foto menos el rol ese no lo cambien ni desde la base de datos porque puede ocacionar un error, a mi se me olvido ocultarlo del sistema pero lo hare, el boton de reportes aun no da reportes pero el de ayuda envia a una pagina web pero sin terminar.
+Pueden crear mas empleados y mas jefes de otras areas para ver si funcionan pero si lo hacen asegurense de poner correos reales.
+
+¡Gracias por su ayuda y comprension!

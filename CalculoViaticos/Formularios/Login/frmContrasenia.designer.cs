@@ -42,7 +42,7 @@
             // 
             this.btnCancelar.AutoRoundedCorners = true;
             this.btnCancelar.BorderColor = System.Drawing.Color.Empty;
-            this.btnCancelar.BorderRadius = 10;
+            this.btnCancelar.BorderRadius = 21;
             this.btnCancelar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnCancelar.Font = new System.Drawing.Font("Poppins", 10F);
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
@@ -69,7 +69,7 @@
             this.txtContraseña.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContraseña.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtContraseña.Location = new System.Drawing.Point(33, 83);
-            this.txtContraseña.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtContraseña.Margin = new System.Windows.Forms.Padding(4);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.PasswordChar = '\0';
             this.txtContraseña.PlaceholderText = "Ingrese su contraseña actual";
@@ -81,7 +81,7 @@
             // 
             this.btnAceptar.AutoRoundedCorners = true;
             this.btnAceptar.BorderColor = System.Drawing.Color.Empty;
-            this.btnAceptar.BorderRadius = 10;
+            this.btnAceptar.BorderRadius = 21;
             this.btnAceptar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(195)))), ((int)(((byte)(50)))));
             this.btnAceptar.Font = new System.Drawing.Font("Poppins", 10F);
             this.btnAceptar.ForeColor = System.Drawing.Color.White;

@@ -25,6 +25,7 @@ namespace TecnasaApp.Formularios.General
         private void frmContrasenia_Load(object sender, EventArgs e)
         {
             txtContraseña.UseSystemPasswordChar = true;
+            txtContraseña.Focus();
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -43,6 +44,7 @@ namespace TecnasaApp.Formularios.General
                 this.Close();
             } else
             {
+                this.TopMost = false;
                 MessageDialog.Show("La contraseña ingresada es incorrecta", "Tecnasa Honduras", MessageDialogButtons.OK, MessageDialogIcon.Error);
             }
         }

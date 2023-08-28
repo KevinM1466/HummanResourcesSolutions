@@ -31,27 +31,28 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPerfil));
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lbl1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lbl2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtNombre = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtApellido = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lbl3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtContraActual = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtConfirmarContra = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtCorreo = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtContrasenia = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.lbl4 = new System.Windows.Forms.Label();
+            this.lbl7 = new System.Windows.Forms.Label();
             this.lblEditarContra = new System.Windows.Forms.LinkLabel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lbl6 = new System.Windows.Forms.Label();
+            this.lbl5 = new System.Windows.Forms.Label();
             this.btnAddImage = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.picImage = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblInfo = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnErrorMessage = new FontAwesome.Sharp.IconButton();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.btnGuardar = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.btnAddImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picImage)).BeginInit();
             this.SuspendLayout();
@@ -67,32 +68,33 @@
             this.guna2BorderlessForm1.ResizeForm = false;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
-            // guna2HtmlLabel1
+            // lbl1
             // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Poppins", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(26, 27);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(135, 39);
-            this.guna2HtmlLabel1.TabIndex = 0;
-            this.guna2HtmlLabel1.Text = "Información";
+            this.lbl1.BackColor = System.Drawing.Color.Transparent;
+            this.lbl1.Font = new System.Drawing.Font("Poppins", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbl1.Location = new System.Drawing.Point(26, 27);
+            this.lbl1.Name = "lbl1";
+            this.lbl1.Size = new System.Drawing.Size(135, 39);
+            this.lbl1.TabIndex = 0;
+            this.lbl1.Text = "Información";
             // 
-            // guna2HtmlLabel2
+            // lbl2
             // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.Silver;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(26, 77);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(79, 30);
-            this.guna2HtmlLabel2.TabIndex = 1;
-            this.guna2HtmlLabel2.Text = "Nombres";
+            this.lbl2.BackColor = System.Drawing.Color.Transparent;
+            this.lbl2.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2.ForeColor = System.Drawing.Color.Silver;
+            this.lbl2.Location = new System.Drawing.Point(26, 77);
+            this.lbl2.Name = "lbl2";
+            this.lbl2.Size = new System.Drawing.Size(79, 30);
+            this.lbl2.TabIndex = 1;
+            this.lbl2.Text = "Nombres";
             // 
             // txtNombre
             // 
             this.txtNombre.BackColor = System.Drawing.Color.Transparent;
             this.txtNombre.BorderRadius = 10;
+            this.txtNombre.BorderThickness = 0;
             this.txtNombre.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNombre.DefaultText = "";
             this.txtNombre.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -133,16 +135,16 @@
             this.txtApellido.Size = new System.Drawing.Size(309, 34);
             this.txtApellido.TabIndex = 4;
             // 
-            // guna2HtmlLabel3
+            // lbl3
             // 
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.Silver;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(356, 77);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(81, 30);
-            this.guna2HtmlLabel3.TabIndex = 3;
-            this.guna2HtmlLabel3.Text = "Apellidos";
+            this.lbl3.BackColor = System.Drawing.Color.Transparent;
+            this.lbl3.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl3.ForeColor = System.Drawing.Color.Silver;
+            this.lbl3.Location = new System.Drawing.Point(356, 77);
+            this.lbl3.Name = "lbl3";
+            this.lbl3.Size = new System.Drawing.Size(81, 30);
+            this.lbl3.TabIndex = 3;
+            this.lbl3.Text = "Apellidos";
             // 
             // txtContraActual
             // 
@@ -231,27 +233,27 @@
             this.txtContrasenia.TabIndex = 267;
             this.txtContrasenia.UseSystemPasswordChar = true;
             // 
-            // label12
+            // lbl4
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.Silver;
-            this.label12.Location = new System.Drawing.Point(352, 168);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(173, 28);
-            this.label12.TabIndex = 266;
-            this.label12.Text = "Contraseña Actual:";
+            this.lbl4.AutoSize = true;
+            this.lbl4.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl4.ForeColor = System.Drawing.Color.Silver;
+            this.lbl4.Location = new System.Drawing.Point(352, 168);
+            this.lbl4.Name = "lbl4";
+            this.lbl4.Size = new System.Drawing.Size(173, 28);
+            this.lbl4.TabIndex = 266;
+            this.lbl4.Text = "Contraseña Actual:";
             // 
-            // label11
+            // lbl7
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Silver;
-            this.label11.Location = new System.Drawing.Point(22, 346);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(204, 28);
-            this.label11.TabIndex = 265;
-            this.label11.Text = "Confirmar Contraseña:";
+            this.lbl7.AutoSize = true;
+            this.lbl7.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl7.ForeColor = System.Drawing.Color.Silver;
+            this.lbl7.Location = new System.Drawing.Point(22, 346);
+            this.lbl7.Name = "lbl7";
+            this.lbl7.Size = new System.Drawing.Size(204, 28);
+            this.lbl7.TabIndex = 265;
+            this.lbl7.Text = "Confirmar Contraseña:";
             // 
             // lblEditarContra
             // 
@@ -266,27 +268,27 @@
             this.lblEditarContra.Text = "Editar";
             this.lblEditarContra.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblEditarContra_LinkClicked);
             // 
-            // label10
+            // lbl6
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Silver;
-            this.label10.Location = new System.Drawing.Point(22, 258);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(115, 28);
-            this.label10.TabIndex = 264;
-            this.label10.Text = "Contraseña:";
+            this.lbl6.AutoSize = true;
+            this.lbl6.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl6.ForeColor = System.Drawing.Color.Silver;
+            this.lbl6.Location = new System.Drawing.Point(22, 258);
+            this.lbl6.Name = "lbl6";
+            this.lbl6.Size = new System.Drawing.Size(115, 28);
+            this.lbl6.TabIndex = 264;
+            this.lbl6.Text = "Contraseña:";
             // 
-            // label9
+            // lbl5
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Silver;
-            this.label9.Location = new System.Drawing.Point(22, 168);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(68, 28);
-            this.label9.TabIndex = 263;
-            this.label9.Text = "Correo";
+            this.lbl5.AutoSize = true;
+            this.lbl5.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl5.ForeColor = System.Drawing.Color.Silver;
+            this.lbl5.Location = new System.Drawing.Point(22, 168);
+            this.lbl5.Name = "lbl5";
+            this.lbl5.Size = new System.Drawing.Size(68, 28);
+            this.lbl5.TabIndex = 263;
+            this.lbl5.Text = "Correo";
             // 
             // btnAddImage
             // 
@@ -318,18 +320,18 @@
             this.picImage.TabStop = false;
             this.picImage.UseTransparentBackground = true;
             // 
-            // guna2HtmlLabel4
+            // lblInfo
             // 
-            this.guna2HtmlLabel4.AutoSize = false;
-            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(760, 96);
-            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(295, 70);
-            this.guna2HtmlLabel4.TabIndex = 273;
-            this.guna2HtmlLabel4.Text = "Completa toda tu información, esto servira para ingresar al sistema";
-            this.guna2HtmlLabel4.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblInfo.AutoSize = false;
+            this.lblInfo.BackColor = System.Drawing.Color.Transparent;
+            this.lblInfo.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInfo.ForeColor = System.Drawing.Color.White;
+            this.lblInfo.Location = new System.Drawing.Point(760, 96);
+            this.lblInfo.Name = "lblInfo";
+            this.lblInfo.Size = new System.Drawing.Size(295, 70);
+            this.lblInfo.TabIndex = 273;
+            this.lblInfo.Text = "Completa toda tu información, esto servira para ingresar al sistema";
+            this.lblInfo.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnErrorMessage
             // 
@@ -379,32 +381,36 @@
             this.btnGuardar.Text = "Guardar Cambios";
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
+            // guna2Elipse5
+            // 
+            this.guna2Elipse5.BorderRadius = 30;
+            // 
             // frmPerfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(1112, 567);
+            this.Controls.Add(this.btnAddImage);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.guna2ControlBox1);
             this.Controls.Add(this.btnErrorMessage);
-            this.Controls.Add(this.guna2HtmlLabel4);
-            this.Controls.Add(this.btnAddImage);
+            this.Controls.Add(this.lblInfo);
             this.Controls.Add(this.picImage);
             this.Controls.Add(this.txtContraActual);
             this.Controls.Add(this.txtConfirmarContra);
             this.Controls.Add(this.txtCorreo);
             this.Controls.Add(this.txtContrasenia);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
+            this.Controls.Add(this.lbl4);
+            this.Controls.Add(this.lbl7);
             this.Controls.Add(this.lblEditarContra);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
+            this.Controls.Add(this.lbl6);
+            this.Controls.Add(this.lbl5);
             this.Controls.Add(this.txtApellido);
-            this.Controls.Add(this.guna2HtmlLabel3);
+            this.Controls.Add(this.lbl3);
             this.Controls.Add(this.txtNombre);
-            this.Controls.Add(this.guna2HtmlLabel2);
-            this.Controls.Add(this.guna2HtmlLabel1);
+            this.Controls.Add(this.lbl2);
+            this.Controls.Add(this.lbl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmPerfil";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -421,26 +427,27 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lbl2;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lbl1;
         private Guna.UI2.WinForms.Guna2TextBox txtNombre;
         private Guna.UI2.WinForms.Guna2TextBox txtApellido;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lbl3;
         private Guna.UI2.WinForms.Guna2TextBox txtContraActual;
         private Guna.UI2.WinForms.Guna2TextBox txtConfirmarContra;
         private Guna.UI2.WinForms.Guna2TextBox txtCorreo;
         private Guna.UI2.WinForms.Guna2TextBox txtContrasenia;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lbl4;
+        private System.Windows.Forms.Label lbl7;
         private System.Windows.Forms.LinkLabel lblEditarContra;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lbl6;
+        private System.Windows.Forms.Label lbl5;
         private Guna.UI2.WinForms.Guna2CirclePictureBox btnAddImage;
         private Guna.UI2.WinForms.Guna2CirclePictureBox picImage;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblInfo;
         private FontAwesome.Sharp.IconButton btnErrorMessage;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2Button btnGuardar;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse5;
     }
 }

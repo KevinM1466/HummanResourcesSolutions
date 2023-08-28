@@ -9,9 +9,9 @@ namespace DataAccess.MailServices
     class SystemSupportMail : MasterMailServer
     {
         public SystemSupportMail() {
-            senderMail = "soportebve@gmail.com";
-            password = "svqqudoriknjfsru";
-            host = "smtp.gmail.com";
+            senderMail = "noramartinez14@hotmail.com";
+            password = "Kevin1978";
+            host = "smtp-mail.outlook.com";
             port = 587;
             ssl = true;
             initializeSmtpClient();

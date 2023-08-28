@@ -39,10 +39,10 @@
             this.btnUsuarios = new FontAwesome.Sharp.IconButton();
             this.btnEmpleados = new FontAwesome.Sharp.IconButton();
             this.btnSolicitud = new FontAwesome.Sharp.IconButton();
-            this.btnRe = new FontAwesome.Sharp.IconButton();
             this.pnlLogo = new System.Windows.Forms.Panel();
             this.btnHome = new System.Windows.Forms.PictureBox();
             this.pnlTitleBar = new System.Windows.Forms.Panel();
+            this.btnConfiguracion = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btnHelp = new FontAwesome.Sharp.IconButton();
             this.btnActualizar = new Guna.UI2.WinForms.Guna2CircleButton();
             this.pbPerfil = new Guna.UI2.WinForms.Guna2CirclePictureBox();
@@ -65,7 +65,6 @@
             this.picLogo = new System.Windows.Forms.PictureBox();
             this.tmrHora = new System.Windows.Forms.Timer(this.components);
             this.tpInformation = new Guna.UI2.WinForms.Guna2HtmlToolTip();
-            this.npCantidad = new Guna.UI2.WinForms.Guna2NotificationPaint(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
@@ -94,12 +93,11 @@
             this.pnlMenu.Controls.Add(this.btnUsuarios);
             this.pnlMenu.Controls.Add(this.btnEmpleados);
             this.pnlMenu.Controls.Add(this.btnSolicitud);
-            this.pnlMenu.Controls.Add(this.btnRe);
             this.pnlMenu.Controls.Add(this.pnlLogo);
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlMenu.Location = new System.Drawing.Point(0, 0);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(220, 805);
+            this.pnlMenu.Size = new System.Drawing.Size(220, 1000);
             this.pnlMenu.TabIndex = 0;
             this.pnlMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlMenu_Paint);
             // 
@@ -114,7 +112,7 @@
             this.btnReportes.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.btnReportes.IconSize = 32;
             this.btnReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReportes.Location = new System.Drawing.Point(0, 533);
+            this.btnReportes.Location = new System.Drawing.Point(1, 533);
             this.btnReportes.Name = "btnReportes";
             this.btnReportes.Padding = new System.Windows.Forms.Padding(10, 0, 30, 0);
             this.btnReportes.Size = new System.Drawing.Size(217, 60);
@@ -159,10 +157,10 @@
             this.btnJefes.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnJefes.IconSize = 32;
             this.btnJefes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnJefes.Location = new System.Drawing.Point(0, 424);
+            this.btnJefes.Location = new System.Drawing.Point(2, 424);
             this.btnJefes.Name = "btnJefes";
             this.btnJefes.Padding = new System.Windows.Forms.Padding(10, 0, 30, 0);
-            this.btnJefes.Size = new System.Drawing.Size(220, 60);
+            this.btnJefes.Size = new System.Drawing.Size(218, 60);
             this.btnJefes.TabIndex = 16;
             this.btnJefes.Text = "JEFES DIRECTOS";
             this.btnJefes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -181,10 +179,10 @@
             this.btnPuestos.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnPuestos.IconSize = 32;
             this.btnPuestos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPuestos.Location = new System.Drawing.Point(0, 314);
+            this.btnPuestos.Location = new System.Drawing.Point(1, 314);
             this.btnPuestos.Name = "btnPuestos";
             this.btnPuestos.Padding = new System.Windows.Forms.Padding(10, 0, 30, 0);
-            this.btnPuestos.Size = new System.Drawing.Size(220, 60);
+            this.btnPuestos.Size = new System.Drawing.Size(219, 60);
             this.btnPuestos.TabIndex = 15;
             this.btnPuestos.Text = "PUESTOS";
             this.btnPuestos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -203,7 +201,7 @@
             this.btnDepartamentos.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnDepartamentos.IconSize = 32;
             this.btnDepartamentos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDepartamentos.Location = new System.Drawing.Point(0, 370);
+            this.btnDepartamentos.Location = new System.Drawing.Point(2, 370);
             this.btnDepartamentos.Name = "btnDepartamentos";
             this.btnDepartamentos.Padding = new System.Windows.Forms.Padding(10, 0, 30, 0);
             this.btnDepartamentos.Size = new System.Drawing.Size(218, 60);
@@ -225,15 +223,16 @@
             this.btnUsuarios.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnUsuarios.IconSize = 32;
             this.btnUsuarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUsuarios.Location = new System.Drawing.Point(0, 478);
+            this.btnUsuarios.Location = new System.Drawing.Point(2, 477);
             this.btnUsuarios.Name = "btnUsuarios";
             this.btnUsuarios.Padding = new System.Windows.Forms.Padding(10, 0, 30, 0);
-            this.btnUsuarios.Size = new System.Drawing.Size(220, 60);
+            this.btnUsuarios.Size = new System.Drawing.Size(218, 60);
             this.btnUsuarios.TabIndex = 13;
             this.btnUsuarios.Text = "USUARIOS";
             this.btnUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnUsuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnUsuarios.UseVisualStyleBackColor = true;
+            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
             // 
             // btnEmpleados
             // 
@@ -246,10 +245,10 @@
             this.btnEmpleados.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnEmpleados.IconSize = 32;
             this.btnEmpleados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEmpleados.Location = new System.Drawing.Point(0, 257);
+            this.btnEmpleados.Location = new System.Drawing.Point(2, 257);
             this.btnEmpleados.Name = "btnEmpleados";
             this.btnEmpleados.Padding = new System.Windows.Forms.Padding(10, 0, 30, 0);
-            this.btnEmpleados.Size = new System.Drawing.Size(220, 60);
+            this.btnEmpleados.Size = new System.Drawing.Size(218, 60);
             this.btnEmpleados.TabIndex = 12;
             this.btnEmpleados.Text = "EMPLEADOS";
             this.btnEmpleados.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -280,29 +279,6 @@
             this.btnSolicitud.UseVisualStyleBackColor = true;
             this.btnSolicitud.Click += new System.EventHandler(this.btnSolicitud_Click);
             // 
-            // btnRe
-            // 
-            this.btnRe.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnRe.FlatAppearance.BorderSize = 0;
-            this.btnRe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRe.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnRe.IconChar = FontAwesome.Sharp.IconChar.QuestionCircle;
-            this.btnRe.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnRe.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnRe.IconSize = 32;
-            this.btnRe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRe.Location = new System.Drawing.Point(0, 745);
-            this.btnRe.Name = "btnRe";
-            this.btnRe.Padding = new System.Windows.Forms.Padding(10, 0, 30, 0);
-            this.btnRe.Size = new System.Drawing.Size(220, 60);
-            this.btnRe.TabIndex = 6;
-            this.btnRe.Text = "AYUDA";
-            this.btnRe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnRe.UseVisualStyleBackColor = true;
-            this.btnRe.Click += new System.EventHandler(this.btnCerrarSesion_Click);
-            // 
             // pnlLogo
             // 
             this.pnlLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
@@ -327,6 +303,7 @@
             // pnlTitleBar
             // 
             this.pnlTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.pnlTitleBar.Controls.Add(this.btnConfiguracion);
             this.pnlTitleBar.Controls.Add(this.btnHelp);
             this.pnlTitleBar.Controls.Add(this.btnActualizar);
             this.pnlTitleBar.Controls.Add(this.pbPerfil);
@@ -338,10 +315,34 @@
             this.pnlTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTitleBar.Location = new System.Drawing.Point(220, 0);
             this.pnlTitleBar.Name = "pnlTitleBar";
-            this.pnlTitleBar.Size = new System.Drawing.Size(1186, 45);
+            this.pnlTitleBar.Size = new System.Drawing.Size(1380, 45);
             this.pnlTitleBar.TabIndex = 1;
             this.pnlTitleBar.Click += new System.EventHandler(this.pnlTitleBar_Click);
             this.pnlTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlTitleBar_MouseDown);
+            // 
+            // btnConfiguracion
+            // 
+            this.btnConfiguracion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnConfiguracion.Animated = true;
+            this.btnConfiguracion.BackColor = System.Drawing.Color.Transparent;
+            this.btnConfiguracion.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnConfiguracion.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnConfiguracion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnConfiguracion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnConfiguracion.FillColor = System.Drawing.Color.Empty;
+            this.btnConfiguracion.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnConfiguracion.ForeColor = System.Drawing.Color.White;
+            this.btnConfiguracion.Image = ((System.Drawing.Image)(resources.GetObject("btnConfiguracion.Image")));
+            this.btnConfiguracion.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnConfiguracion.IndicateFocus = true;
+            this.btnConfiguracion.Location = new System.Drawing.Point(1017, 4);
+            this.btnConfiguracion.Name = "btnConfiguracion";
+            this.btnConfiguracion.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnConfiguracion.Size = new System.Drawing.Size(40, 40);
+            this.btnConfiguracion.TabIndex = 31;
+            this.tpInformation.SetToolTip(this.btnConfiguracion, "Cambia algunas configuraciones del sistema");
+            this.btnConfiguracion.UseTransparentBackground = true;
+            this.btnConfiguracion.Click += new System.EventHandler(this.btnConfiguracion_Click);
             // 
             // btnHelp
             // 
@@ -353,7 +354,7 @@
             this.btnHelp.IconColor = System.Drawing.Color.Gainsboro;
             this.btnHelp.IconFont = FontAwesome.Sharp.IconFont.Brands;
             this.btnHelp.IconSize = 16;
-            this.btnHelp.Location = new System.Drawing.Point(1073, 3);
+            this.btnHelp.Location = new System.Drawing.Point(1267, 4);
             this.btnHelp.Name = "btnHelp";
             this.btnHelp.Size = new System.Drawing.Size(37, 37);
             this.btnHelp.TabIndex = 30;
@@ -376,13 +377,14 @@
             this.btnActualizar.Image = ((System.Drawing.Image)(resources.GetObject("btnActualizar.Image")));
             this.btnActualizar.ImageSize = new System.Drawing.Size(35, 35);
             this.btnActualizar.IndicateFocus = true;
-            this.btnActualizar.Location = new System.Drawing.Point(823, 3);
+            this.btnActualizar.Location = new System.Drawing.Point(1017, 3);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btnActualizar.Size = new System.Drawing.Size(40, 40);
             this.btnActualizar.TabIndex = 29;
             this.tpInformation.SetToolTip(this.btnActualizar, "Actualiza la informacion del usuario para despues de editarla");
             this.btnActualizar.UseTransparentBackground = true;
+            this.btnActualizar.Visible = false;
             this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // pbPerfil
@@ -391,7 +393,7 @@
             this.pbPerfil.BackColor = System.Drawing.Color.Transparent;
             this.pbPerfil.Image = ((System.Drawing.Image)(resources.GetObject("pbPerfil.Image")));
             this.pbPerfil.ImageRotate = 0F;
-            this.pbPerfil.Location = new System.Drawing.Point(1027, 6);
+            this.pbPerfil.Location = new System.Drawing.Point(1221, 6);
             this.pbPerfil.Name = "pbPerfil";
             this.pbPerfil.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.pbPerfil.Size = new System.Drawing.Size(32, 32);
@@ -413,7 +415,7 @@
             this.btnInfoUser.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnInfoUser.IconSize = 40;
             this.btnInfoUser.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnInfoUser.Location = new System.Drawing.Point(869, 0);
+            this.btnInfoUser.Location = new System.Drawing.Point(1063, 0);
             this.btnInfoUser.Name = "btnInfoUser";
             this.btnInfoUser.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnInfoUser.Size = new System.Drawing.Size(198, 46);
@@ -459,7 +461,7 @@
             this.btnminimice.IconColor = System.Drawing.Color.Gainsboro;
             this.btnminimice.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnminimice.IconSize = 16;
-            this.btnminimice.Location = new System.Drawing.Point(1110, 4);
+            this.btnminimice.Location = new System.Drawing.Point(1304, 4);
             this.btnminimice.Name = "btnminimice";
             this.btnminimice.Size = new System.Drawing.Size(37, 37);
             this.btnminimice.TabIndex = 3;
@@ -477,7 +479,7 @@
             this.btnSalir.IconColor = System.Drawing.Color.Red;
             this.btnSalir.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSalir.IconSize = 16;
-            this.btnSalir.Location = new System.Drawing.Point(1147, 4);
+            this.btnSalir.Location = new System.Drawing.Point(1341, 4);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(37, 37);
             this.btnSalir.TabIndex = 2;
@@ -497,7 +499,7 @@
             this.pnlUser.Controls.Add(this.lblEmail);
             this.pnlUser.Controls.Add(this.lblName);
             this.pnlUser.Controls.Add(this.btnConfigProfile);
-            this.pnlUser.Location = new System.Drawing.Point(726, 2);
+            this.pnlUser.Location = new System.Drawing.Point(928, 5);
             this.pnlUser.Margin = new System.Windows.Forms.Padding(2);
             this.pnlUser.Name = "pnlUser";
             this.pnlUser.Size = new System.Drawing.Size(333, 220);
@@ -620,17 +622,16 @@
             this.pnlDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlDesktop.Location = new System.Drawing.Point(220, 45);
             this.pnlDesktop.Name = "pnlDesktop";
-            this.pnlDesktop.Size = new System.Drawing.Size(1186, 760);
+            this.pnlDesktop.Size = new System.Drawing.Size(1380, 955);
             this.pnlDesktop.TabIndex = 2;
             this.pnlDesktop.Click += new System.EventHandler(this.pnlDesktop_Click);
             // 
             // lblFecha
             // 
-            this.lblFecha.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblFecha.AutoSize = true;
             this.lblFecha.Font = new System.Drawing.Font("Poppins", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFecha.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblFecha.Location = new System.Drawing.Point(423, 511);
+            this.lblFecha.Location = new System.Drawing.Point(559, 613);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(148, 48);
             this.lblFecha.TabIndex = 3;
@@ -638,11 +639,10 @@
             // 
             // lblHora
             // 
-            this.lblHora.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblHora.AutoSize = true;
             this.lblHora.Font = new System.Drawing.Font("Poppins", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHora.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblHora.Location = new System.Drawing.Point(471, 442);
+            this.lblHora.Location = new System.Drawing.Point(549, 539);
             this.lblHora.Name = "lblHora";
             this.lblHora.Size = new System.Drawing.Size(299, 106);
             this.lblHora.TabIndex = 2;
@@ -651,8 +651,9 @@
             // picLogo
             // 
             this.picLogo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.picLogo.BackColor = System.Drawing.Color.Transparent;
             this.picLogo.Image = ((System.Drawing.Image)(resources.GetObject("picLogo.Image")));
-            this.picLogo.Location = new System.Drawing.Point(376, 179);
+            this.picLogo.Location = new System.Drawing.Point(473, 276);
             this.picLogo.Name = "picLogo";
             this.picLogo.Size = new System.Drawing.Size(448, 260);
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -673,11 +674,6 @@
             this.tpInformation.TitleFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tpInformation.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.tpInformation.ToolTipTitle = "Tecnasa Honduras";
-            // 
-            // npCantidad
-            // 
-            this.npCantidad.Alignment = Guna.UI2.WinForms.Enums.CustomContentAlignment.TopLeft;
-            this.npCantidad.TargetControl = this.btnSolicitudes;
             // 
             // guna2Elipse3
             // 
@@ -709,13 +705,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1406, 805);
+            this.ClientSize = new System.Drawing.Size(1600, 1000);
             this.Controls.Add(this.pnlDesktop);
             this.Controls.Add(this.pnlTitleBar);
             this.Controls.Add(this.pnlMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
-            this.MinimumSize = new System.Drawing.Size(1376, 789);
+            this.MinimumSize = new System.Drawing.Size(1600, 1000);
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tecnasa";
@@ -759,7 +755,6 @@
         private FontAwesome.Sharp.IconButton btnInfoUser;
         private System.Windows.Forms.PictureBox pictureBox1;
         private FontAwesome.Sharp.IconButton btnConfigProfile;
-        private FontAwesome.Sharp.IconButton btnRe;
         public System.Windows.Forms.Label lblCargo;
         public System.Windows.Forms.Label lblEmail;
         public System.Windows.Forms.Label lblName;
@@ -772,9 +767,7 @@
         private Guna.UI2.WinForms.Guna2CirclePictureBox pbPerfil;
         private FontAwesome.Sharp.IconButton btnSolicitudes;
         private Guna.UI2.WinForms.Guna2CirclePictureBox picImage;
-        private Guna.UI2.WinForms.Guna2CircleButton btnActualizar;
         public Guna.UI2.WinForms.Guna2HtmlToolTip tpInformation;
-        public Guna.UI2.WinForms.Guna2NotificationPaint npCantidad;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
         private FontAwesome.Sharp.IconButton btnHelp;
@@ -782,6 +775,8 @@
         private Guna.UI2.WinForms.Guna2Button btnCerrarSesion;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private FontAwesome.Sharp.IconButton btnReportes;
+        private Guna.UI2.WinForms.Guna2CircleButton btnConfiguracion;
+        public Guna.UI2.WinForms.Guna2CircleButton btnActualizar;
     }
 }
 

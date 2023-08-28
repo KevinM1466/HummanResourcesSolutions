@@ -30,10 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.datosSolicitudBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             ((System.ComponentModel.ISupportInitialize)(this.datosSolicitudBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // datosSolicitudBindingSource
+            // 
+            this.datosSolicitudBindingSource.DataSource = typeof(CalculoViaticos.Reportes.Datos.DatosSolicitud);
             // 
             // reportViewer1
             // 
@@ -48,10 +52,6 @@
             this.reportViewer1.Size = new System.Drawing.Size(908, 543);
             this.reportViewer1.TabIndex = 0;
             // 
-            // datosSolicitudBindingSource
-            // 
-            this.datosSolicitudBindingSource.DataSource = typeof(CalculoViaticos.Reportes.Datos.DatosSolicitud);
-            // 
             // frmReporteSolicitud
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -59,6 +59,7 @@
             this.ClientSize = new System.Drawing.Size(908, 543);
             this.Controls.Add(this.reportViewer1);
             this.Name = "frmReporteSolicitud";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmReporteSolicitud";
             this.Load += new System.EventHandler(this.frmReporteSolicitud_Load);
             ((System.ComponentModel.ISupportInitialize)(this.datosSolicitudBindingSource)).EndInit();

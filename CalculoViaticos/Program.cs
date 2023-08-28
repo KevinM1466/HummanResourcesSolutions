@@ -1,11 +1,16 @@
-﻿using System;
+﻿using CalculoViaticos.Formularios.ConfiiguracionInicial;
+using CalculoViaticos.Formularios.Empleados;
+using CalculoViaticos.Reportes.Formularios;
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
+using TecnasaApp;
 using TecnasaApp.Formularios;
 using TecnasaApp.Formularios.General.Empleados;
-using TecnasaApp.Formularios.General.Vacaciones;
 
 namespace CalculoViaticos
 {
@@ -19,7 +24,14 @@ namespace CalculoViaticos
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmLogin());
+
+            if (Properties.Settings.Default.ConfiguracionInicial == false)
+            {
+                Application.Run(new frmConfiguracionInicial());
+            } else
+            {
+                Application.Run(new frmLogin());
+            }
         }
     }
 }

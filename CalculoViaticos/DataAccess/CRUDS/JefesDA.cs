@@ -14,7 +14,7 @@ namespace DataAccess.CRUDS
         private DataTable table = new DataTable();
         private SqlCommand command = new SqlCommand();
 
-        public DataTable Mostrar()
+        public DataTable Mostrar( bool isEnable )
         {
             using (var connection = GetConnection())
             {
@@ -30,6 +30,7 @@ namespace DataAccess.CRUDS
                     command.Parameters.AddWithValue("@departamentoID", 0);
                     command.Parameters.AddWithValue("@firma", null);
                     command.Parameters.AddWithValue("@nombreFirma", "");
+                    command.Parameters.AddWithValue("@estado", isEnable);
                     command.Parameters.AddWithValue("@accion", "Mostrar");
                     leer = command.ExecuteReader();
                     table.Load(leer);

@@ -12,14 +12,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TecnasaApp;
 
 namespace CalculoViaticos.Formularios.Empleados
 {
     public partial class frmPerfil : Form
     {
-        public frmPerfil()
+        private frmPrincipal formularioPrincipal;
+        public frmPerfil(frmPrincipal formularioPrincipal)
         {
             InitializeComponent();
+            this.formularioPrincipal = formularioPrincipal;
         }
 
         Validaciones validaciones = new Validaciones();
@@ -27,6 +30,31 @@ namespace CalculoViaticos.Formularios.Empleados
         {
             loadUser();
             initializePassEditControl();
+
+            if ( CalculoViaticos.Properties.Settings.Default.Tema != "" ) {
+                CambiarTema( CalculoViaticos.Properties.Settings.Default.Tema );
+            } else {
+                CambiarTema( "Tecnasa" );
+            }
+        }
+
+        public void CambiarTema( string tema ) {
+            Temas.ElegirTema( tema );
+            this.BackColor = Temas.pnlDesktop;
+            //Labels
+            lbl1.ForeColor = Temas.fuenteTitulos;
+            lbl2.ForeColor = Temas.fuenteTitulos;
+            lbl3.ForeColor = Temas.fuenteTitulos;
+            lbl4.ForeColor = Temas.fuenteTitulos;
+            lbl5.ForeColor = Temas.fuenteTitulos;
+            lbl6.ForeColor = Temas.fuenteTitulos;
+            lbl7.ForeColor = Temas.fuenteTitulos;
+            lblInfo.ForeColor = Temas.fuenteTitulos;
+            lblEditarContra.LinkColor = Temas.fuenteTitulos;
+
+            //buttons
+            btnGuardar.FillColor = Temas.buttonsColor;
+            btnErrorMessage.ForeColor = Temas.fuenteTitulos;
         }
 
         private void loadUser()
@@ -138,6 +166,8 @@ namespace CalculoViaticos.Formularios.Empleados
                                 reset();
                                 //pnlPerfil.Visible = false;
                                 btnAddImage.Visible = false;
+                                formularioPrincipal.Refresh();
+                                formularioPrincipal.LoadUserData();
                             }
                         }
                         else

@@ -10,5 +10,14 @@
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">Data Source=THEDARKSARCO;Initial Catalog=ViaticosTEH;Integrated Security=True</Value>
     </Setting>
+    <Setting Name="ConfiguracionInicial" Roaming="true" GenerateDefaultValueInCode="false" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Tema" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Seleccionado" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
   </Settings>
 </SettingsFile>

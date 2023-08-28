@@ -32,5 +32,41 @@ namespace CalculoViaticos.Properties {
                 return ((string)(this["ViaticosTEHConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SettingsManageabilityAttribute(global::System.Configuration.SettingsManageability.Roaming)]
+        public bool ConfiguracionInicial {
+            get {
+                return ((bool)(this["ConfiguracionInicial"]));
+            }
+            set {
+                this["ConfiguracionInicial"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Tema {
+            get {
+                return ((string)(this["Tema"]));
+            }
+            set {
+                this["Tema"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Seleccionado {
+            get {
+                return ((string)(this["Seleccionado"]));
+            }
+            set {
+                this["Seleccionado"] = value;
+            }
+        }
     }
 }

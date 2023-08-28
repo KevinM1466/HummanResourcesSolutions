@@ -141,6 +141,7 @@ D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\Clases\bin\Debug\Cla
 D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\Clases\bin\Debug\Clases.pdb
 D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\Clases\bin\Debug\BouncyCastle.Crypto.dll
 D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\Clases\bin\Debug\Domain.dll
+D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\Clases\bin\Debug\Guna.UI2.dll
 D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\Clases\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
 D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\Clases\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\Clases\bin\Debug\Microsoft.Extensions.DependencyInjection.dll

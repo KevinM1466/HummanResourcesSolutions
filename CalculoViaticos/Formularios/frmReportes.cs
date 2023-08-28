@@ -48,12 +48,12 @@ namespace CalculoViaticos.Formularios
 
         private void btnReporte1_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new frmReporteSolicitudes());
+            OpenChildForm(new frmReporteSolicitudesFecha());
         }
 
         private void btnReporte2_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new frmReporte2());
+            OpenChildForm(new frmReporteDepartamentosMasSolicitudes());
         }
 
         private void btnReporte3_Click(object sender, EventArgs e)

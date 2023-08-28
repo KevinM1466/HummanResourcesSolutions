@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Title of the document</title>
+    <style>
+        body {
+            position: relative;
+            width: 21cm;
+            height: 29.7cm;
+            margin: 0 auto;
+            color: #001028;
+            background: #FFFFFF;
+            font-size: 14px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        table.border {
+            border-collapse: collapse;
+        }
+
+            table.border th {
+                padding: 5px;
+                border: 1px solid black;
+            }
+
+            table.border td {
+                padding: 5px;
+                border: 1px solid black;
+            }
+
+        .encabezado {
+            background-color: #343374;
+            font-size: 14px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .contenedor {
+            width: min(90%, 120rem);
+            margin: 0 auto;
+        }
+        
+        .footer {
+            background-color: #343374;
+            padding-bottom: 2rem;
+            margin-top: 4rem;
+        }
+        
+        .barra {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 2rem;
+            margin-top: 40rem;
+        }
+        
+        .logo {
+            color: white;
+        }
+
+        .logo__nombre {
+            font-weight: 400;
+        }
+        
+        .logo__bold {
+            font-weight: 700;
+        }
+        
+        .no-margin {
+            margin: 0;
+        }
+        .centrar-texto {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="width:100%">
+        <tr>
+            <td style="width:20%"></td>
+            <td style="width:60%" align="center" valign="top">
+                <table>
+                    <tr>
+                        <td align="center">
+                            <h2 style="margin:0px">Tecnasa Honduras</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">Direccion: Blvd. Morazán, Edificio Morazán Torre #2 </td>
+                    </tr>
+                    <tr>
+                        <td align="center">Telefono: 2228-0066</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="3" height="20"></td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <table style="width:100%">
+                    <tr>
+                        <td colspan="1" style="width:20%; font-weight: bold">Encargado:</td>
+                        <td colspan="3" style="width:80%;border-bottom:1px solid black; ">@ENCARGADO</td>
+                    </tr>
+                </table>
+                <table style="width:100%">
+                    <tr>
+                        <td style="width:20%; font-weight: bold">Cargo:</td>
+                        <td style="width:30%;border-bottom:1px solid black">@CARGO</td>
+                        <td style="width:10%; font-weight: bold">Fecha:</td>
+                        <td style="width:40%;border-bottom:1px solid black">@FECHA</td>
+                    </tr>
+                </table>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td colspan="3" height="30"></td>
+        </tr>
+
+        <tr>
+            <td colspan="3">
+                <table class="border" style="width:100%;">
+                    <thead>
+                        <tr class="encabezado">
+                            <th style="width:150px; text-align: center">EMPLEADO</th>
+                            <th style="width:120px; text-align: center">DEPARTAMENTO</th>
+                            <th style="width:140px; text-align: center">TIPO DE SOLICITUD</th>
+                            <th style="width:120px; text-align: center">FECHA DE INICIO</th>
+                            <th style="width:120px; text-align: center">FECHA FINAL</th>
+                        </tr>
+                    </thead>
+                    <tbody style="font-size:12px; text-align: center">
+                        <!--<tr>
+                            <td>Alex castellanos</td>
+                            <td>ATM</td>
+                            <td>Vacaciones</td>
+                            <td>19-08-2023</td>
+                            <td>01-09-2023</td>
+                        </tr>-->
+                        @FILAS
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo">
+                    <h1 class="logo__nombre no-margin centrar-texto">
+                        Tecnasa<span class="logo__bold">Honduras</span>
+                    </h1>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

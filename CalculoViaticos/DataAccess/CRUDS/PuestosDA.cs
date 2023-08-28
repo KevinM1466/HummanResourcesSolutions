@@ -15,7 +15,7 @@ namespace DataAccess.CRUDS
         private DataTable table = new DataTable();
         private SqlCommand command = new SqlCommand();
 
-        public DataTable Mostrar()
+        public DataTable Mostrar( bool estado)
         {
             using (var connection = GetConnection())
             {
@@ -28,6 +28,7 @@ namespace DataAccess.CRUDS
                     command.Parameters.Clear();
                     command.Parameters.AddWithValue("@codigo", 0);
                     command.Parameters.AddWithValue("@nombreCargo", "");
+                    command.Parameters.AddWithValue("@estado", estado);
                     command.Parameters.AddWithValue("@accion", "Mostrar");
                     leer = command.ExecuteReader();
                     table.Load(leer);

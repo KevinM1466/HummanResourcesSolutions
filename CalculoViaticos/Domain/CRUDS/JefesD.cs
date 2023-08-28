@@ -12,10 +12,10 @@ namespace Domain.CRUDS
     {
         private JefesDA jefes = new JefesDA();
 
-        public DataTable Mostrar()
+        public DataTable Mostrar(bool isEnable)
         {
             DataTable tabla = new DataTable();
-            tabla = jefes.Mostrar();
+            tabla = jefes.Mostrar(isEnable);
             return tabla;
         }
 

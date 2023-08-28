@@ -10,9 +10,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using CalculoViaticos.Formularios.Empleados;
 using CalculoViaticos.Formularios.Login;
+using Clases;
 using Common.cache;
 using Domain;
 using Guna.UI2.WinForms;
+using static Guna.UI2.WinForms.Suite.Descriptions;
 //using TecnasaApp.Formularios.Components;
 using Timer = System.Windows.Forms.Timer;
 
@@ -32,7 +34,6 @@ namespace TecnasaApp.Formularios
         {
             txtPassword.UseSystemPasswordChar = true;
         }
-
         private void btnIniciarSesion_Click_1(object sender, EventArgs e)
         {
             if (txtUsuario.Text != "")

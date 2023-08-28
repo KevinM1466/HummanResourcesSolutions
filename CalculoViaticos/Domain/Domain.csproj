@@ -74,6 +74,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ComboBox_D\ComboBox_D.cs" />
+    <Compile Include="CRUDS\AuditTrailsD.cs" />
     <Compile Include="CRUDS\ClientesD.cs" />
     <Compile Include="CRUDS\DepartamentosD.cs" />
     <Compile Include="CRUDS\EmpleadosD.cs" />
@@ -82,8 +83,17 @@
     <Compile Include="CRUDS\PuestosD.cs" />
     <Compile Include="CRUDS\ReporteSolicitudD.cs" />
     <Compile Include="CRUDS\SolicitudD.cs" />
+    <Compile Include="CRUDS\UsuariosD.cs" />
+    <Compile Include="filterModel.cs" />
+    <Compile Include="Reinicio\ReinicioD.cs" />
     <Compile Include="searchModel.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="SqlServer\SolicitudesDepartamentos\DepartamentosListing.cs" />
+    <Compile Include="SqlServer\SolicitudesDepartamentos\departamentsSolicitudReport.cs" />
+    <Compile Include="SqlServer\Solicitudes\NetSolicitudesByPeriod.cs" />
+    <Compile Include="SqlServer\Solicitudes\SolicitudesListing.cs" />
+    <Compile Include="SqlServer\Solicitudes\solicitudesReport.cs" />
+    <Compile Include="SqlServer\TotalSolicitudes.cs" />
     <Compile Include="userModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -99,6 +109,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\Domain.SqlServer.DepartamentosListing.datasource" />
+    <None Include="Properties\DataSources\Domain.SqlServer.departamentsSolicitudReport.datasource" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="SqlServerTypes\readme.htm" />
