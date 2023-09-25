@@ -106,6 +106,7 @@ namespace TecnasaApp.Formularios.General.Empleados {
             dgDatos.Visible = false;
             MostrarControles( true, false );
             limpiar();
+            isEdit = false;
         }
 
         private void btnEditar_Click( object sender, EventArgs e ) {
@@ -236,6 +237,7 @@ namespace TecnasaApp.Formularios.General.Empleados {
             txtCodigo.Clear();
             txtNombre.Clear();
             txtApellido.Clear();
+            picPerfil.Image = picPerfil.InitialImage;
         }
 
         private void ocultarErrors() {

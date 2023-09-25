@@ -2,6 +2,7 @@
 
 using Domain;
 using Domain.CRUDS;
+
 using Guna.UI2.WinForms;
 
 using System;
@@ -14,25 +15,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TecnasaApp.Formularios.General.Empleados
-{
-    public partial class frmPuestos : Form
-    {
+namespace TecnasaApp.Formularios.General.Empleados {
+    public partial class frmPuestos : Form {
         PuestosD puestos = new PuestosD();
         MetodosListados metodos = new MetodosListados();
         Validaciones validaciones = new Validaciones();
         searchModel search = new searchModel();
         bool isEdit = false;
-        public frmPuestos()
-        {
+        public frmPuestos() {
             InitializeComponent();
         }
 
-        private void frmPuestos_Load(object sender, EventArgs e)
-        {
-            metodos.MostrarCargos(dgDatos, true);
-            metodos.MostrarCargos(dgEliminados, false);
-            metodos.AuditPuestos(dgAuditoria);
+        private void frmPuestos_Load( object sender, EventArgs e ) {
+            metodos.MostrarCargos( dgDatos, true );
+            metodos.MostrarCargos( dgEliminados, false );
+            metodos.AuditPuestos( dgAuditoria );
 
             if ( CalculoViaticos.Properties.Settings.Default.Tema != "" ) {
                 CambiarTema( CalculoViaticos.Properties.Settings.Default.Tema );
@@ -83,25 +80,23 @@ namespace TecnasaApp.Formularios.General.Empleados
             tcGeneral.TabButtonSelectedState.InnerColor = Temas.tapPageSelectedInner;
         }
 
-        private void btnNuevo_Click(object sender, EventArgs e)
-        {
+        private void btnNuevo_Click( object sender, EventArgs e ) {
             dgDatos.Visible = false;
             limpiar();
-            MostrarControles(true, false);
+            MostrarControles( true, false );
+            isEdit = false;
             limpiar();
         }
 
-        private void btnEditar_Click(object sender, EventArgs e)
-        {
+        private void btnEditar_Click( object sender, EventArgs e ) {
             dgDatos.Visible = false;
-            txtCodigo.Text = dgDatos.CurrentRow.Cells[0].Value.ToString();
-            txtCargo.Text = dgDatos.CurrentRow.Cells[1].Value.ToString();
-            MostrarControles(true, false);
+            txtCodigo.Text = dgDatos.CurrentRow.Cells[ 0 ].Value.ToString();
+            txtCargo.Text = dgDatos.CurrentRow.Cells[ 1 ].Value.ToString();
+            MostrarControles( true, false );
             isEdit = true;
         }
 
-        private void btnEliminar_Click(object sender, EventArgs e)
-        {
+        private void btnEliminar_Click( object sender, EventArgs e ) {
             if ( dgDatos.Rows.Count > 0 ) {
                 try {
                     if ( MessageDialog.Show( "¿Quiere eliminar este registro?", "Advertencia", MessageDialogButtons.OKCancel, MessageDialogIcon.Question ) == DialogResult.OK ) {
@@ -127,50 +122,48 @@ namespace TecnasaApp.Formularios.General.Empleados
             }
         }
 
-        private void btnGuardar_Click(object sender, EventArgs e)
-        {
+        private void btnGuardar_Click( object sender, EventArgs e ) {
             if ( ValidarCamposVacios() ) {
                 if ( ValidarCamposCorrectos() ) {
                     try {
                         if ( isEdit == false ) {
-                            puestos.Insertar(txtCargo.Text);
-                            MessageDialog.Show( "Datos guardados correctamente", "Tecnasa Honduras", MessageDialogButtons.OK, MessageDialogIcon.Information );
-                            limpiar();
-                            MostrarControles( false, true );
-                            dgDatos.Visible = true;
-                            btnErrorMessage.Visible = false;
-                            metodos.MostrarCargos( dgDatos, true );
-                            metodos.AuditPuestos( dgAuditoria );
-                        } else {
-                            puestos.Actualizar( int.Parse(txtCodigo.Text), txtCargo.Text );
-                            MessageDialog.Show( "Datos Actualizados correctamente", "Tecnasa Honduras", MessageDialogButtons.OK, MessageDialogIcon.Information );
-                            limpiar();
-                            MostrarControles( false, true );
-                            dgDatos.Visible = true;
-                            btnErrorMessage.Visible = false;
-                            metodos.MostrarCargos( dgDatos, true );
-                            metodos.AuditPuestos( dgAuditoria );
-                        }
-                    } catch ( Exception ex ) {
-                        MessageDialog.Show( "Error en el servidor: " + ex.Message, "Tecnasa Honduras", MessageDialogButtons.OK, MessageDialogIcon.Error );
+                        puestos.Insertar( txtCargo.Text );
+                        MessageDialog.Show( "Datos guardados correctamente", "Tecnasa Honduras", MessageDialogButtons.OK, MessageDialogIcon.Information );
+                        limpiar();
+                        MostrarControles( false, true );
+                        dgDatos.Visible = true;
+                        btnErrorMessage.Visible = false;
+                        metodos.MostrarCargos( dgDatos, true );
+                        metodos.AuditPuestos( dgAuditoria );
+                    } else {
+                        puestos.Actualizar( int.Parse( txtCodigo.Text ), txtCargo.Text );
+                        MessageDialog.Show( "Datos Actualizados correctamente", "Tecnasa Honduras", MessageDialogButtons.OK, MessageDialogIcon.Information );
+                        limpiar();
+                        MostrarControles( false, true );
+                        dgDatos.Visible = true;
+                        btnErrorMessage.Visible = false;
+                        metodos.MostrarCargos( dgDatos, true );
+                        metodos.AuditPuestos( dgAuditoria );
                     }
-                } else {
+                } catch ( Exception ex ) {
+                    MessageDialog.Show( "Error en el servidor: " + ex.Message, "Tecnasa Honduras", MessageDialogButtons.OK, MessageDialogIcon.Error );
+                }
+            } else {
                     validaciones.msgError( "Los campos tienen un formato incorrecto", btnErrorMessage );
                 }
             } else {
-                validaciones.msgError("No puede dejar los campos vacios", btnErrorMessage);
+                validaciones.msgError( "No puede dejar los campos vacios", btnErrorMessage );
             }
         }
 
-        private void btnCancelar_Click(object sender, EventArgs e)
-        {
+        private void btnCancelar_Click( object sender, EventArgs e ) {
             dgDatos.Visible = true;
-            MostrarControles(false, true);
+            MostrarControles( false, true );
             btnErrorMessage.Visible = false;
+            limpiar();
         }
 
-        private void MostrarControles(bool isVisible, bool isEnable)
-        {
+        private void MostrarControles( bool isVisible, bool isEnable ) {
             lblTitle.Visible = isVisible;
             //lblCodigo.Visible = isVisible;
             lblNombre.Visible = isVisible;
@@ -186,42 +179,36 @@ namespace TecnasaApp.Formularios.General.Empleados
             btnEliminar.Visible = isEnable;
         }
 
-        private void limpiar()
-        {
+        private void limpiar() {
             txtCodigo.Clear();
             txtCargo.Clear();
         }
 
-        private void btnBuscar_Click(object sender, EventArgs e)
-        {
+        private void btnBuscar_Click( object sender, EventArgs e ) {
             txtBuscar.Visible = true;
             txtBuscar.Focus();
             txtBuscar.FillColor = Temas.Buscar;
             btnBuscar.BackColor = Temas.Buscar;
         }
 
-        private void frmPuestos_Click(object sender, EventArgs e)
-        {
+        private void frmPuestos_Click( object sender, EventArgs e ) {
             txtBuscar.Visible = false;
             btnBuscar.BackColor = Temas.pnlDesktop;
         }
 
-        private void frmPuestos_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Escape)
-            {
+        private void frmPuestos_KeyDown( object sender, KeyEventArgs e ) {
+            if ( e.KeyCode == Keys.Escape ) {
                 txtBuscar.Visible = false;
                 btnBuscar.BackColor = Temas.pnlDesktop;
             }
         }
 
-        private void txtCargo_TextChanged(object sender, EventArgs e)
-        {
+        private void txtCargo_TextChanged( object sender, EventArgs e ) {
             btnErrorMessage.Visible = false;
         }
 
         private void txtCargo_TextChanged_1( object sender, EventArgs e ) {
-            validaciones.SoloLetrasColor(txtCargo.Text, lblMensaje, txtCargo);
+            validaciones.SoloLetrasColor( txtCargo.Text, lblMensaje, txtCargo );
             btnErrorMessage.Visible = false;
         }
 

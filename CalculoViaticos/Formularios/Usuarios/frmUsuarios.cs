@@ -125,6 +125,7 @@ namespace CalculoViaticos.Formularios.Empleados {
             dgDatos.Visible = false;
             MostrarControles( true, false );
             limpiar();
+            isEdit = false;
         }
 
         private void btnEditar_Click( object sender, EventArgs e ) {
@@ -148,8 +149,8 @@ namespace CalculoViaticos.Formularios.Empleados {
                 if ( txtEmpleado.Text != "" || txtCorreo.Text != "" || txtContrasenia.Text != "" || txtConfirmarContra.Text != "" ) {
                     if ( chkMayus.Checked && chkMinCaracteres.Checked && chkMinus.Checked && chkNumero.Checked ) {
                         if ( txtContrasenia.Text == txtConfirmarContra.Text ) {
-                            if ( isEdit == false ) {
-                                try {
+                            try {
+                                if ( isEdit == false ) {
                                     usuarios.Insertar( int.Parse( txtEmpleadoID.Text ), txtCorreo.Text, txtContrasenia.Text, txtConfirmarContra.Text );
                                     MessageDialog.Show( "Datos guardados con exito", "Soporte de Sistema", MessageDialogButtons.OK, MessageDialogIcon.Information );
                                     limpiar();
@@ -159,13 +160,7 @@ namespace CalculoViaticos.Formularios.Empleados {
                                     btnErrorMessage.Visible = false;
                                     metodos.MostrarUsuarios( dgDatos );
                                     metodos.AuditUsuarios( dgAuditoria );
-                                } catch ( Exception ex ) {
-                                    MessageDialog.Show( ex.Message, "Tecnasa Honduras", MessageDialogButtons.OK, MessageDialogIcon.Error );
-                                }
-                            }
-
-                            if ( isEdit == true ) {
-                                try {
+                                } else {
                                     usuarios.Actualizar( int.Parse( txtUserID.Text ), int.Parse( txtEmpleadoID.Text ), txtCorreo.Text, txtContrasenia.Text, txtConfirmarContra.Text );
                                     MessageDialog.Show( "Datos guardados con exito", "Soporte de Sistema", MessageDialogButtons.OK, MessageDialogIcon.Information );
                                     isEdit = false;
@@ -176,9 +171,9 @@ namespace CalculoViaticos.Formularios.Empleados {
                                     btnErrorMessage.Visible = false;
                                     metodos.MostrarUsuarios( dgDatos );
                                     metodos.AuditUsuarios( dgAuditoria );
-                                } catch ( Exception ex ) {
-                                    MessageBox.Show( ex.ToString(), "Soporte de Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error );
                                 }
+                            } catch ( Exception ex ) {
+                                MessageDialog.Show( ex.Message, "Tecnasa Honduras", MessageDialogButtons.OK, MessageDialogIcon.Error );
                             }
                         } else {
                             validaciones.msgError( "Las contraseñas no coinciden", btnErrorMessage );

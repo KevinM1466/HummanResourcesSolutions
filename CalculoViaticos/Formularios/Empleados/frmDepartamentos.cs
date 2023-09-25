@@ -87,6 +87,7 @@ namespace TecnasaApp.Formularios.General.Empleados {
             dgDatos.Visible = false;
             MostrarControles( true, false );
             limpiar();
+            isEdit = false;
         }
 
         private void btnEditar_Click( object sender, EventArgs e ) {
@@ -122,7 +123,7 @@ namespace TecnasaApp.Formularios.General.Empleados {
                             var nombreDeparetamento = dgDatos.CurrentRow.Cells[ 1 ].Value.ToString();
                             var cargoID = dgDatos.CurrentRow.Cells[ 2 ].Value.ToString();
 
-                            departamentos.Eliminar( int.Parse( cod ), nombreDeparetamento );
+                            departamentos.Eliminar( int.Parse( cod ) );
                             metodos.MostrarDepartamentos( dgDatos, true );
                             metodos.MostrarDepartamentos( dgEliminados, false );
                             metodos.AuditDepartamentos( dgAuditoria );

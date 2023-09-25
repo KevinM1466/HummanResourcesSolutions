@@ -33,10 +33,10 @@ namespace Domain.CRUDS
             return tabla;
         }
 
-        public DataTable Eliminar(int codigo, string nombreDepartamento)
+        public DataTable Eliminar(int codigo)
         {
             DataTable tabla = new DataTable();
-            tabla = departamento.Eliminar(codigo, nombreDepartamento);
+            tabla = departamento.Eliminar(codigo);
             return tabla;
         }
     }

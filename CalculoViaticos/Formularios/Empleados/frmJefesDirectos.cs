@@ -92,6 +92,7 @@ namespace TecnasaApp.Formularios.General.Empleados {
             dgDatos.Visible = false;
             MostrarControles( true, false );
             limpiar();
+            isEdit = false;
         }
 
         private void btnEditar_Click( object sender, EventArgs e ) {

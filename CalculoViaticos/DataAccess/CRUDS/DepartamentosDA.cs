@@ -81,7 +81,7 @@ namespace DataAccess.CRUDS
             return table;
         }
 
-        public DataTable Eliminar(int codigo, string nombreDepartamento)
+        public DataTable Eliminar(int codigo)
         {
             using (var connection = GetConnection())
             {
@@ -93,7 +93,6 @@ namespace DataAccess.CRUDS
                     command.CommandType = CommandType.StoredProcedure;
                     command.Parameters.Clear();
                     command.Parameters.AddWithValue("@codigo", codigo);
-                    command.Parameters.AddWithValue("@nombreDepartamento", nombreDepartamento);
                     command.Parameters.AddWithValue("@accion", "Eliminar");
                     leer = command.ExecuteReader();
                     table.Load(leer);
