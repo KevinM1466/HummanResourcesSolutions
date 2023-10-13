@@ -51,5 +51,11 @@ namespace Domain.CRUDS
             tabla = solicitud.ActualizarJefe(solicitudID, tipoSolicitud, empleadoID, fechaEfectiva, fechaInicio, fechaFinal, fechaReingreso, isRemuneracion, motivo);
             return tabla;
         }
+
+        public DataTable Cancelacion( int solicitudID, string tipoSolicitud, int empleadoID, DateTime fechaEfectiva, DateTime fechaInicio, DateTime fechaFinal, DateTime fechaReingreso, bool isRemuneracion, string motivo ) {
+            DataTable tabla = new DataTable();
+            tabla = solicitud.Cancelacion( solicitudID, tipoSolicitud, empleadoID, fechaEfectiva, fechaInicio, fechaFinal, fechaReingreso, isRemuneracion, motivo );
+            return tabla;
+        }
     }
 }

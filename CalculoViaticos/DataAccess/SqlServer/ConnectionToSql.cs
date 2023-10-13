@@ -13,7 +13,7 @@ namespace DataAccess
         private readonly string connectionString;
         public ConnectionToSql()
         {
-            connectionString = "Data Source=THEDARKSARCO;Initial Catalog=dbTecnasa;Integrated Security=True";
+            connectionString = "Data Source=tcp:THEDARKSARCO;Initial Catalog=dbTecnasa; User Id=AppAccess; Password=Tecnasa2023;Integrated Security=True";
         }
 
         protected SqlConnection GetConnection()

@@ -88,6 +88,7 @@
             this.btnReporte4.Size = new System.Drawing.Size(190, 54);
             this.btnReporte4.TabIndex = 5;
             this.btnReporte4.Text = "Reporte 4";
+            this.btnReporte4.Visible = false;
             this.btnReporte4.Click += new System.EventHandler(this.btnReporte4_Click);
             // 
             // btnReporte3

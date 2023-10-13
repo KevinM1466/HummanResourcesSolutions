@@ -51,7 +51,7 @@ namespace TecnasaApp
         private void frmPrincipal_Load(object sender, EventArgs e)
         {
             LoadUserData();
-            cargos.AnyMethod(btnSolicitud, btnEmpleados, btnUsuarios, btnDepartamentos, btnPuestos, btnJefes, btnSolicitudes);
+            cargos.AnyMethod(btnSolicitud, btnEmpleados, btnUsuarios, btnDepartamentos, btnPuestos, btnJefes, btnSolicitudes, btnReportes);
             security.security( UserLoginCache.userID );
 
             if (CalculoViaticos.Properties.Settings.Default.Tema != "")

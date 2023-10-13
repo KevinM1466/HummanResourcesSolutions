@@ -1356,11 +1356,43 @@
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
+          <Image Name="Image1">
+            <Source>Database</Source>
+            <Value>=First(Fields!firma.Value, "DataSet1")</Value>
+            <MIMEType>image/png</MIMEType>
+            <Sizing>Fit</Sizing>
+            <Top>17.34337cm</Top>
+            <Left>1.5cm</Left>
+            <Height>1.5cm</Height>
+            <Width>9.32779cm</Width>
+            <ZIndex>30</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Image>
+          <Image Name="Image3">
+            <Source>Database</Source>
+            <Value>=First(Fields!firmaJefe.Value, "DataSet1")</Value>
+            <MIMEType>image/png</MIMEType>
+            <Sizing>Fit</Sizing>
+            <Top>17.34337cm</Top>
+            <Left>10.82779cm</Left>
+            <Height>1.5cm</Height>
+            <Width>8.67221cm</Width>
+            <ZIndex>31</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Image>
         </ReportItems>
         <Height>19.5cm</Height>
         <Style />
       </Body>
-      <Width>21cm</Width>
+      <Width>21.47287cm</Width>
       <Page>
         <PageHeader>
           <Height>4.56812cm</Height>

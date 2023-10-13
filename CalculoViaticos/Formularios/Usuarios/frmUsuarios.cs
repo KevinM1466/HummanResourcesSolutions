@@ -148,35 +148,39 @@ namespace CalculoViaticos.Formularios.Empleados {
             if ( ValidarCamposVacios() ) {
                 if ( txtEmpleado.Text != "" || txtCorreo.Text != "" || txtContrasenia.Text != "" || txtConfirmarContra.Text != "" ) {
                     if ( chkMayus.Checked && chkMinCaracteres.Checked && chkMinus.Checked && chkNumero.Checked ) {
-                        if ( txtContrasenia.Text == txtConfirmarContra.Text ) {
-                            try {
-                                if ( isEdit == false ) {
-                                    usuarios.Insertar( int.Parse( txtEmpleadoID.Text ), txtCorreo.Text, txtContrasenia.Text, txtConfirmarContra.Text );
-                                    MessageDialog.Show( "Datos guardados con exito", "Soporte de Sistema", MessageDialogButtons.OK, MessageDialogIcon.Information );
-                                    limpiar();
-                                    MostrarControles( false, true );
-                                    pnlMenu.Visible = false;
-                                    dgDatos.Visible = true;
-                                    btnErrorMessage.Visible = false;
-                                    metodos.MostrarUsuarios( dgDatos );
-                                    metodos.AuditUsuarios( dgAuditoria );
-                                } else {
-                                    usuarios.Actualizar( int.Parse( txtUserID.Text ), int.Parse( txtEmpleadoID.Text ), txtCorreo.Text, txtContrasenia.Text, txtConfirmarContra.Text );
-                                    MessageDialog.Show( "Datos guardados con exito", "Soporte de Sistema", MessageDialogButtons.OK, MessageDialogIcon.Information );
-                                    isEdit = false;
-                                    limpiar();
-                                    MostrarControles( false, true );
-                                    pnlMenu.Visible = false;
-                                    dgDatos.Visible = true;
-                                    btnErrorMessage.Visible = false;
-                                    metodos.MostrarUsuarios( dgDatos );
-                                    metodos.AuditUsuarios( dgAuditoria );
+                        if ( validaciones.ValidarEmail( txtCorreo.Text, lblMensajeCorreo, txtCorreo ) == true ) {
+                            if ( txtContrasenia.Text == txtConfirmarContra.Text ) {
+                                try {
+                                    if ( isEdit == false ) {
+                                        usuarios.Insertar( int.Parse( txtEmpleadoID.Text ), txtCorreo.Text, txtContrasenia.Text, txtConfirmarContra.Text );
+                                        MessageDialog.Show( "Datos guardados con exito", "Soporte de Sistema", MessageDialogButtons.OK, MessageDialogIcon.Information );
+                                        limpiar();
+                                        MostrarControles( false, true );
+                                        pnlMenu.Visible = false;
+                                        dgDatos.Visible = true;
+                                        btnErrorMessage.Visible = false;
+                                        metodos.MostrarUsuarios( dgDatos );
+                                        metodos.AuditUsuarios( dgAuditoria );
+                                    } else {
+                                        usuarios.Actualizar( int.Parse( txtUserID.Text ), int.Parse( txtEmpleadoID.Text ), txtCorreo.Text, txtContrasenia.Text, txtConfirmarContra.Text );
+                                        MessageDialog.Show( "Datos guardados con exito", "Soporte de Sistema", MessageDialogButtons.OK, MessageDialogIcon.Information );
+                                        isEdit = false;
+                                        limpiar();
+                                        MostrarControles( false, true );
+                                        pnlMenu.Visible = false;
+                                        dgDatos.Visible = true;
+                                        btnErrorMessage.Visible = false;
+                                        metodos.MostrarUsuarios( dgDatos );
+                                        metodos.AuditUsuarios( dgAuditoria );
+                                    }
+                                } catch ( Exception ex ) {
+                                    MessageDialog.Show( ex.Message, "Tecnasa Honduras", MessageDialogButtons.OK, MessageDialogIcon.Error );
                                 }
-                            } catch ( Exception ex ) {
-                                MessageDialog.Show( ex.Message, "Tecnasa Honduras", MessageDialogButtons.OK, MessageDialogIcon.Error );
+                            } else {
+                                validaciones.msgError( "Las contraseñas no coinciden", btnErrorMessage );
                             }
                         } else {
-                            validaciones.msgError( "Las contraseñas no coinciden", btnErrorMessage );
+                            validaciones.msgError( "El correo no es válido", btnErrorMessage );
                         }
                     } else {
                         validaciones.msgError( "La contraseña tiene formato incorrecto", btnErrorMessage );

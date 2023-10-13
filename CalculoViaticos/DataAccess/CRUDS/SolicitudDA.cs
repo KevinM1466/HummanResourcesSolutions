@@ -188,5 +188,31 @@ namespace DataAccess.CRUDS
             }
             return table;
         }
+
+        public DataTable Cancelacion( int solicitudID, string tipoSolicitud, int empleadoID, DateTime fechaEfectiva, DateTime fechaInicio, DateTime fechaFinal, DateTime fechaReingreso, bool isRemuneracion, string motivo ) {
+            using ( var connection = GetConnection() ) {
+                connection.Open();
+                using ( var command = new SqlCommand() ) {
+                    command.Connection = connection;
+                    command.CommandText = "CRUD_Solicitud";
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.Clear();
+                    command.Parameters.AddWithValue( "@solicitudID", solicitudID );
+                    command.Parameters.AddWithValue( "@tipoSolicitud", tipoSolicitud );
+                    command.Parameters.AddWithValue( "@empleadoID", empleadoID );
+                    command.Parameters.AddWithValue( "@fechaEfectiva", fechaEfectiva );
+                    command.Parameters.AddWithValue( "@fechaInicio", fechaInicio );
+                    command.Parameters.AddWithValue( "@fechaFinal", fechaFinal );
+                    command.Parameters.AddWithValue( "@fechaReingreso", fechaReingreso );
+                    command.Parameters.AddWithValue( "@remuneracion", isRemuneracion );
+                    command.Parameters.AddWithValue( "@motivo", motivo );
+                    command.Parameters.AddWithValue( "@accion", "Cancelacion" );
+                    leer = command.ExecuteReader();
+                    table.Load( leer );
+                    connection.Close();
+                }
+            }
+            return table;
+        }
     }
 }

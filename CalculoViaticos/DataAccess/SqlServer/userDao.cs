@@ -366,17 +366,18 @@ namespace DataAccess
             return table;
         }
 
-        public void AnyMethod(FontAwesome.Sharp.IconButton solicitud, FontAwesome.Sharp.IconButton empleado, FontAwesome.Sharp.IconButton usuario, FontAwesome.Sharp.IconButton departamentos, FontAwesome.Sharp.IconButton puestos, FontAwesome.Sharp.IconButton Jefes, FontAwesome.Sharp.IconButton solicitudes)
+        public void AnyMethod(FontAwesome.Sharp.IconButton solicitud, FontAwesome.Sharp.IconButton empleado, FontAwesome.Sharp.IconButton usuario, FontAwesome.Sharp.IconButton departamentos, FontAwesome.Sharp.IconButton puestos, FontAwesome.Sharp.IconButton Jefes, FontAwesome.Sharp.IconButton solicitudes, FontAwesome.Sharp.IconButton reportes )
         {
             if (UserLoginCache.puesto == Cargos.Administrador)
             {
-                solicitud.Visible = true;
+                solicitud.Visible = false;
                 empleado.Visible = true;
                 usuario.Visible = true;
                 departamentos.Visible = true;
                 puestos.Visible = true;
                 Jefes.Visible = true;
                 solicitudes.Visible = true;
+                reportes.Visible = true;
             }
             else if (UserLoginCache.isJefe == Cargos.Jefe)
             {
@@ -387,6 +388,7 @@ namespace DataAccess
                 puestos.Visible = false;
                 Jefes.Visible = false;
                 solicitudes.Visible = true;
+                reportes.Visible = false;
             } else
             {
                 solicitud.Visible = true;
@@ -396,6 +398,7 @@ namespace DataAccess
                 puestos.Visible = false;
                 Jefes.Visible = false;
                 solicitudes.Visible = true;
+                reportes.Visible = false;
             }
         }
     }

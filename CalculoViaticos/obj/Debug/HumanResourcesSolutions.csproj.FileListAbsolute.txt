@@ -98,9 +98,6 @@ D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\bin\Debug\SqlServerT
 D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
 D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\bin\Debug\SqlServerTypes\x86\msvcr120.dll
 D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
-D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\bin\Debug\CalculoViaticos.exe.config
-D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\bin\Debug\CalculoViaticos.exe
-D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\bin\Debug\CalculoViaticos.pdb
 D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\bin\Debug\BouncyCastle.Crypto.dll
 D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\bin\Debug\Clases.dll
 D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\bin\Debug\Common.dll
@@ -195,5 +192,12 @@ D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\obj\Debug\CalculoVia
 D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\obj\Debug\HumanResourcesSolutions.csproj.GenerateResource.cache
 D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\obj\Debug\HumanResourcesSolutions.csproj.CoreCompileInputs.cache
 D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\obj\Debug\HumanResourcesSolutions.csproj.CopyComplete
-D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\obj\Debug\CalculoViaticos.exe
-D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\obj\Debug\CalculoViaticos.pdb
+D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\bin\Debug\TecnasaApp.exe.config
+D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\bin\Debug\TecnasaApp.exe.manifest
+D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\bin\Debug\TecnasaApp.application
+D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\bin\Debug\TecnasaApp.exe
+D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\bin\Debug\TecnasaApp.pdb
+D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\obj\Debug\TecnasaApp.exe.manifest
+D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\obj\Debug\TecnasaApp.application
+D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\obj\Debug\TecnasaApp.exe
+D:\noram\Documents\HummanResourcesSolutions\CalculoViaticos\obj\Debug\TecnasaApp.pdb

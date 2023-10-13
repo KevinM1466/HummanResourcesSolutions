@@ -7,11 +7,27 @@
     <ProjectGuid>{183AF30D-E425-48DF-B0F8-49CD13EBC247}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>CalculoViaticos</RootNamespace>
-    <AssemblyName>CalculoViaticos</AssemblyName>
+    <AssemblyName>TecnasaApp</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\noram\Documents\TecnasaApp\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>5</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -34,6 +50,24 @@
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>CalculoViaticos.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>HRS.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>2329057B0B41E59367683195ADD710746E319929</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>HumanResourcesSolutions_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
@@ -90,22 +124,22 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Formularios\ConfiiguracionInicial\frmConfiguracion.cs">
+    <Compile Include="Formularios\ConfiguracionInicial\frmConfiguracion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\ConfiiguracionInicial\frmConfiguracion.Designer.cs">
+    <Compile Include="Formularios\ConfiguracionInicial\frmConfiguracion.Designer.cs">
       <DependentUpon>frmConfiguracion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\ConfiiguracionInicial\frmConfiguracionInicial.cs">
+    <Compile Include="Formularios\ConfiguracionInicial\frmConfiguracionInicial.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\ConfiiguracionInicial\frmConfiguracionInicial.Designer.cs">
+    <Compile Include="Formularios\ConfiguracionInicial\frmConfiguracionInicial.Designer.cs">
       <DependentUpon>frmConfiguracionInicial.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\ConfiiguracionInicial\frmPrimerUsuario.cs">
+    <Compile Include="Formularios\ConfiguracionInicial\frmPrimerUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\ConfiiguracionInicial\frmPrimerUsuario.Designer.cs">
+    <Compile Include="Formularios\ConfiguracionInicial\frmPrimerUsuario.Designer.cs">
       <DependentUpon>frmPrimerUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Empleados\frmDepartamentos.cs">
@@ -245,13 +279,13 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.cs" />
-    <EmbeddedResource Include="Formularios\ConfiiguracionInicial\frmConfiguracion.resx">
+    <EmbeddedResource Include="Formularios\ConfiguracionInicial\frmConfiguracion.resx">
       <DependentUpon>frmConfiguracion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\ConfiiguracionInicial\frmConfiguracionInicial.resx">
+    <EmbeddedResource Include="Formularios\ConfiguracionInicial\frmConfiguracionInicial.resx">
       <DependentUpon>frmConfiguracionInicial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\ConfiiguracionInicial\frmPrimerUsuario.resx">
+    <EmbeddedResource Include="Formularios\ConfiguracionInicial\frmPrimerUsuario.resx">
       <DependentUpon>frmPrimerUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Empleados\frmDepartamentos.resx">
@@ -325,6 +359,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Reportes\SolicitudesPorDepartamento.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes\SolicitudesReport.rdlc" />
+    <None Include="HumanResourcesSolutions_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\DataSources\CalculoViaticos.Clases.DatosViaticos.datasource" />
     <None Include="Properties\DataSources\CalculoViaticos.Clases.Validaciones.datasource" />
@@ -401,6 +436,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\350.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="HRS.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -324,9 +324,9 @@
             this.lblImagen.ForeColor = System.Drawing.Color.Gainsboro;
             this.lblImagen.Location = new System.Drawing.Point(393, 237);
             this.lblImagen.Name = "lblImagen";
-            this.lblImagen.Size = new System.Drawing.Size(67, 23);
+            this.lblImagen.Size = new System.Drawing.Size(54, 23);
             this.lblImagen.TabIndex = 254;
-            this.lblImagen.Text = "Imagen:";
+            this.lblImagen.Text = "Firma:";
             this.lblImagen.Visible = false;
             // 
             // guna2Elipse7
@@ -528,7 +528,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgDatos.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgDatos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(199)))), ((int)(((byte)(206)))));
-            this.dgDatos.Location = new System.Drawing.Point(38, 61);
+            this.dgDatos.Location = new System.Drawing.Point(37, 61);
             this.dgDatos.Name = "dgDatos";
             this.dgDatos.ReadOnly = true;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;

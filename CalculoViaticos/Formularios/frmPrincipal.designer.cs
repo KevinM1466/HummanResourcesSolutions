@@ -103,6 +103,7 @@
             // 
             // btnReportes
             // 
+            this.btnReportes.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnReportes.FlatAppearance.BorderSize = 0;
             this.btnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReportes.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -112,10 +113,10 @@
             this.btnReportes.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.btnReportes.IconSize = 32;
             this.btnReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReportes.Location = new System.Drawing.Point(1, 533);
+            this.btnReportes.Location = new System.Drawing.Point(0, 560);
             this.btnReportes.Name = "btnReportes";
             this.btnReportes.Padding = new System.Windows.Forms.Padding(10, 0, 30, 0);
-            this.btnReportes.Size = new System.Drawing.Size(217, 60);
+            this.btnReportes.Size = new System.Drawing.Size(220, 60);
             this.btnReportes.TabIndex = 18;
             this.btnReportes.Text = "REPORTES";
             this.btnReportes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -135,7 +136,7 @@
             this.btnSolicitudes.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSolicitudes.IconSize = 32;
             this.btnSolicitudes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSolicitudes.Location = new System.Drawing.Point(0, 200);
+            this.btnSolicitudes.Location = new System.Drawing.Point(0, 500);
             this.btnSolicitudes.Name = "btnSolicitudes";
             this.btnSolicitudes.Padding = new System.Windows.Forms.Padding(10, 0, 30, 0);
             this.btnSolicitudes.Size = new System.Drawing.Size(220, 60);
@@ -148,6 +149,7 @@
             // 
             // btnJefes
             // 
+            this.btnJefes.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnJefes.FlatAppearance.BorderSize = 0;
             this.btnJefes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnJefes.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -157,10 +159,10 @@
             this.btnJefes.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnJefes.IconSize = 32;
             this.btnJefes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnJefes.Location = new System.Drawing.Point(2, 424);
+            this.btnJefes.Location = new System.Drawing.Point(0, 440);
             this.btnJefes.Name = "btnJefes";
             this.btnJefes.Padding = new System.Windows.Forms.Padding(10, 0, 30, 0);
-            this.btnJefes.Size = new System.Drawing.Size(218, 60);
+            this.btnJefes.Size = new System.Drawing.Size(220, 60);
             this.btnJefes.TabIndex = 16;
             this.btnJefes.Text = "JEFES DIRECTOS";
             this.btnJefes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -170,6 +172,7 @@
             // 
             // btnPuestos
             // 
+            this.btnPuestos.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnPuestos.FlatAppearance.BorderSize = 0;
             this.btnPuestos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPuestos.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -179,10 +182,10 @@
             this.btnPuestos.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnPuestos.IconSize = 32;
             this.btnPuestos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPuestos.Location = new System.Drawing.Point(1, 314);
+            this.btnPuestos.Location = new System.Drawing.Point(0, 380);
             this.btnPuestos.Name = "btnPuestos";
             this.btnPuestos.Padding = new System.Windows.Forms.Padding(10, 0, 30, 0);
-            this.btnPuestos.Size = new System.Drawing.Size(219, 60);
+            this.btnPuestos.Size = new System.Drawing.Size(220, 60);
             this.btnPuestos.TabIndex = 15;
             this.btnPuestos.Text = "PUESTOS";
             this.btnPuestos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -192,6 +195,7 @@
             // 
             // btnDepartamentos
             // 
+            this.btnDepartamentos.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnDepartamentos.FlatAppearance.BorderSize = 0;
             this.btnDepartamentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDepartamentos.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -201,10 +205,10 @@
             this.btnDepartamentos.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnDepartamentos.IconSize = 32;
             this.btnDepartamentos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDepartamentos.Location = new System.Drawing.Point(2, 370);
+            this.btnDepartamentos.Location = new System.Drawing.Point(0, 320);
             this.btnDepartamentos.Name = "btnDepartamentos";
             this.btnDepartamentos.Padding = new System.Windows.Forms.Padding(10, 0, 30, 0);
-            this.btnDepartamentos.Size = new System.Drawing.Size(218, 60);
+            this.btnDepartamentos.Size = new System.Drawing.Size(220, 60);
             this.btnDepartamentos.TabIndex = 14;
             this.btnDepartamentos.Text = "DEPARTAMENTOS";
             this.btnDepartamentos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -214,6 +218,7 @@
             // 
             // btnUsuarios
             // 
+            this.btnUsuarios.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnUsuarios.FlatAppearance.BorderSize = 0;
             this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUsuarios.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -223,10 +228,10 @@
             this.btnUsuarios.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnUsuarios.IconSize = 32;
             this.btnUsuarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUsuarios.Location = new System.Drawing.Point(2, 477);
+            this.btnUsuarios.Location = new System.Drawing.Point(0, 260);
             this.btnUsuarios.Name = "btnUsuarios";
             this.btnUsuarios.Padding = new System.Windows.Forms.Padding(10, 0, 30, 0);
-            this.btnUsuarios.Size = new System.Drawing.Size(218, 60);
+            this.btnUsuarios.Size = new System.Drawing.Size(220, 60);
             this.btnUsuarios.TabIndex = 13;
             this.btnUsuarios.Text = "USUARIOS";
             this.btnUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -236,6 +241,7 @@
             // 
             // btnEmpleados
             // 
+            this.btnEmpleados.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnEmpleados.FlatAppearance.BorderSize = 0;
             this.btnEmpleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEmpleados.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -245,10 +251,10 @@
             this.btnEmpleados.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnEmpleados.IconSize = 32;
             this.btnEmpleados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEmpleados.Location = new System.Drawing.Point(2, 257);
+            this.btnEmpleados.Location = new System.Drawing.Point(0, 200);
             this.btnEmpleados.Name = "btnEmpleados";
             this.btnEmpleados.Padding = new System.Windows.Forms.Padding(10, 0, 30, 0);
-            this.btnEmpleados.Size = new System.Drawing.Size(218, 60);
+            this.btnEmpleados.Size = new System.Drawing.Size(220, 60);
             this.btnEmpleados.TabIndex = 12;
             this.btnEmpleados.Text = "EMPLEADOS";
             this.btnEmpleados.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -360,6 +366,7 @@
             this.btnHelp.TabIndex = 30;
             this.tpInformation.SetToolTip(this.btnHelp, "Ayuda de como utilizar el programa");
             this.btnHelp.UseVisualStyleBackColor = false;
+            this.btnHelp.Visible = false;
             this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
             // btnActualizar

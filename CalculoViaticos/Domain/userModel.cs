@@ -119,9 +119,9 @@ namespace Domain
             return userDao.recoverPassword(userRequesting, password);
         }
 
-        public void AnyMethod(FontAwesome.Sharp.IconButton solicitud, FontAwesome.Sharp.IconButton empleado, FontAwesome.Sharp.IconButton usuario, FontAwesome.Sharp.IconButton departamentos, FontAwesome.Sharp.IconButton puestos, FontAwesome.Sharp.IconButton Jefes, FontAwesome.Sharp.IconButton solicitudes)
+        public void AnyMethod(FontAwesome.Sharp.IconButton solicitud, FontAwesome.Sharp.IconButton empleado, FontAwesome.Sharp.IconButton usuario, FontAwesome.Sharp.IconButton departamentos, FontAwesome.Sharp.IconButton puestos, FontAwesome.Sharp.IconButton Jefes, FontAwesome.Sharp.IconButton solicitudes, FontAwesome.Sharp.IconButton reportes )
         {
-            userDao.AnyMethod(solicitud, empleado, usuario, departamentos, puestos, Jefes, solicitudes);
+            userDao.AnyMethod(solicitud, empleado, usuario, departamentos, puestos, Jefes, solicitudes, reportes);
         }
     }
 }

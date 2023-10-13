@@ -51,6 +51,7 @@ namespace TecnasaApp.Formularios.General.Solicitudes
                 metodos.MostrarSolicitudEmpleado(dgDatos, UserLoginCache.empleadoID);
                 lblTitle.Text = "Solicitudes Confirmadas";
                 btnConfirmarSolicitud.Visible = false;
+                btnCancelarSoli.Visible = false;
             }
 
             if ( CalculoViaticos.Properties.Settings.Default.Tema != "" ) {
@@ -125,7 +126,7 @@ namespace TecnasaApp.Formularios.General.Solicitudes
                     datos.Motivo = dgDatos.CurrentRow.Cells[ 11 ].Value.ToString();
                     datos.JefeDirecto = dgDatos.CurrentRow.Cells[ 13 ].Value.ToString();
                     datos.CorreoJefe = dgDatos.CurrentRow.Cells[ 14 ].Value.ToString();
-                    //datos.firmaJefe = (byte[])dgDatos.CurrentRow.Cells[15].Value;
+                    datos.firmaJefe = (byte[])dgDatos.CurrentRow.Cells[ 15 ].Value;
                     datos.firma = UserLoginCache.firmaAdmin;
                     datos.isTrue = isTrue;
                     frm.datosSolicitud.Add( datos );
@@ -204,6 +205,40 @@ namespace TecnasaApp.Formularios.General.Solicitudes
                         metodos.MostrarSolicitudJefe( dgDatos, UserLoginCache.jefeID );
                         wait.Close();
                     }
+                } else {
+                    //Code
+                }
+            } else {
+                MessageDialog.Show( "Debe seleccionar una fila", "Tecnasa Honduras", MessageDialogButtons.OK, MessageDialogIcon.Information );
+            }
+        }
+
+        private void btnCancelarSoli_Click( object sender, EventArgs e ) {
+            const string message = "¿Está seguro de cancelar la solicitud?";
+            const string caption = "Confirmacion de Solicitud";
+            var result = MessageDialog.Show( message, caption,
+                                         MessageDialogButtons.YesNo,
+                                         MessageDialogIcon.Question );
+            if ( dgDatos.Rows.Count > 0 ) {
+                if ( result == DialogResult.Yes ) {
+                    wait.Show( this );
+                    int solicitudID = int.Parse( dgDatos.CurrentRow.Cells[ 0 ].Value.ToString() );
+                    int empleadoID = int.Parse( dgDatos.CurrentRow.Cells[ 1 ].Value.ToString() );
+                    string tipoSolicitud = dgDatos.CurrentRow.Cells[ 5 ].Value.ToString();
+                    DateTime fechaEfectiva = DateTime.Parse( dgDatos.CurrentRow.Cells[ 6 ].Value.ToString() );
+                    DateTime fechaInicio = DateTime.Parse( dgDatos.CurrentRow.Cells[ 7 ].Value.ToString() );
+                    DateTime fechaFinal = DateTime.Parse( dgDatos.CurrentRow.Cells[ 8 ].Value.ToString() );
+                    DateTime fechaReingreso = DateTime.Parse( dgDatos.CurrentRow.Cells[ 9 ].Value.ToString() );
+                    bool isRemuneracion = bool.Parse( dgDatos.CurrentRow.Cells[ 10 ].Value.ToString() );
+                    string motivo = dgDatos.CurrentRow.Cells[ 11 ].Value.ToString();
+                    var correoJefe = dgDatos.CurrentRow.Cells[ 14 ].Value.ToString();
+                    var correoEmpleado = dgDatos.CurrentRow.Cells[ 16 ].Value.ToString();
+
+                    solicitudes.Cancelacion( solicitudID, tipoSolicitud, empleadoID, fechaEfectiva, fechaInicio, fechaFinal, fechaReingreso, isRemuneracion, motivo );
+                    MessageDialog.Show( "Solicitud cancelada\n Se envio un correo electronico al empleado confirmando su cancelacion", "Tecnasa Honduras", MessageDialogButtons.OK, MessageDialogIcon.Information );
+                    envioCorreo.MessageJefeDirecto( correoJefe );
+                    metodos.MostrarSolicitud( dgDatos, UserLoginCache.jefeID );
+                    wait.Close();
                 } else {
                     //Code
                 }
